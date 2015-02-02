@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+ <Configuration status="WARN" name="WdprPropertiesRewritePolicy" packages="com.wdpr.ee.loggingapi.appender">
+    <Properties>
+        <Property name="log-path">C:/log</Property>
+    </Properties>
+    <Appenders>
+        <Console name="console-log" target="SYSTEM_OUT">
+            <PatternLayout pattern="[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} - %msg%n"/>
+        </Console>
+        <RollingFile name="trace1-log" fileName="${log-path}/test.log"
+                     filePattern="${log-path}/test-%d{yyyy-MM-dd}.log">
+            <PatternLayout>
+                <pattern>[%-5level] %d{yyyy-MM-dd HH:mm:ss.SSS} [%t] %c{1} [%X]- %msg%n</pattern>
+            </PatternLayout>
+            <Policies>
+                <SizeBasedTriggeringPolicy size="100 MB" />
+            </Policies>
+        </RollingFile>
+	    <Rewrite name="rewritePolicy">
+	      <AppenderRef ref="trace1-log" />
+		      <WdprPropertiesRewritePolicy>
+				<Property name="java.version">${sys:java.version}</Property>
+				<Property name="application.name">${resource:application.name}</Property>
+				<Property name="os.name">${sys:os.name}</Property>
+				<Property name="os.version">${sys:os.version}</Property>
+				<Property name="host.name">${sys:host.name}</Property>
+		      </WdprPropertiesRewritePolicy>
+	    </Rewrite>
+    </Appenders>
+    
+    <Loggers>
+        <Root level="debug" additivity="false">
+            <AppenderRef ref="rewritePolicy"/>
+        </Root>
+    </Loggers>
+    
+</Configuration> 
