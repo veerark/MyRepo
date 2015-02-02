@@ -1,0 +1,1033 @@
+defect_id,ITEMID,DEFECT_DESC,STATUS_CD,SEVERITY_CD,ENV_CD,ASSIGNED_TO,DETECTED_BY,DETECTED_DT
+651060,276,Cancel BEM upload subMenu is not present under events menu,Open,High,CCDEV2,360273,221129.00,25-Dec-13
+651061,276,Unable to create CB client via BEM by providing LOB priority as CAB and Priority Value as M,Open,Medium,CCDEV2,360273,346258.00,25-DEC-13
+651062,276,Incorrect validation displayed during MCC NON IND client create.,Open,Medium,CCDEV2,360273,298950,21-JAN-14
+651063,276,"When providing non allowable special characters for the client long name,Short name and Legal name,It displays the incorrect resonse message.",Deferred,Low,CCDEV2,360273,273846,29-JAN-14
+651064,277," On updating the field, “Indicia of U.S. status found for Form W-8 client during due diligence review” for a PWM tax form it simply shows ""FATCA attribISTes update failed: "" validation in the report and not the exact reason
+Tax form id:1000002510",Open,High,CCDEV2,360273,221129,30-JAN-14
+651065,277,"Small characters 'c','f','n' are also allowed for indicia field change via FATCA maintenance template",Open,High,CCDEV2,360273,221129,22-JAN-14
+26198,192,Testing,Hold,Medium,CCDEV4,264965,264965,27-MAR-14
+651028,274,"Issue 1:When modifying Erisa fields for approval scenario.it was updated directly.
+ It should go for approval when modifying erisa fields.
+ 
+Issue 2:The client is already have pending approval,when modifying Erisa fields for that client bIST its get updated directly.it is wrong.it should throw an validation.
+ 
+User:U008881
+Client id:0251798341
+Trans id:7970066 
+ ",Open,High,CCDEV2,360273,273846,08-JAN-14
+651029,274,"Unable to search the client , ",Open,High,CCDEV2,360273,273846,08-JAN-14
+651031,274,"If empty value is provided for the field “Date indicia of U.S. status for W-8 client cured” and if the value of “Indicia of U.S. status found for Form W-8 client during due diligence review” is provided as “C (Indicia Cured)”, then the entered value for “Date indicia of U.S. status for W-8 client cured” will be suppressed and defaulted with the system date.",Open,High,CCDEV2,360273,235251,12-JAN-14
+651032,274,"The user Z245701, has update access,owner and view pi permission bIST this user is able to upload the template for deactivating a client.
+ 
+It should throw ""You donot have permission to activate/deactivate clients"" Instead it shows ""Client is Active in CRI System"" in notification list
+client: 0231840597 , trans id:11458471",Deferred,High,CCDEV2,360273,221129,22-JAN-14
+651033,274,The user permission for Erisa field is same as online for service.Please confirm with onsite.,Rejected,High,CCDEV2,360273,273846,24-JUL-13
+651034,274,"When providing Erisa Plan Type is invalid values ,it throws the validation message as ""ERISA Plan Regulated is Mandatory when ERISA Plan Type is provided""It is wrong. ",Open,Low,CCDEV2,360273,273846,22-JAN-14
+651035,274,"When a branch client under deactivated HO is changed from DEA-PRO via BEM, ""Failed.Invoking rules engine"" validation is shown in notification list
+ 
+Whereas via online the status change was a success for the same client 
+client id:0220473577
+trans id:11458494
+ ",Closed,Medium,CCDEV2,360273,221129,08-JAN-14
+651036,274,unwanted Alerts are displaying on submit of a tax form while creating the tax form with account name.,Open,High,CCDEV2,360273,273993,06-JAN-14
+651037,274,"Unable to perform any Transactions related to FATCA TAX Form Maintenance.
+A Validation 'Functional ID is missing' is thrown.",Rejected,Emergency,CCDEV2,360273,235251,30-DEC-13
+651038,274,"Unable to create tax form for PE lob.
+ 
+""CC-20013 : Error while Updating the database: {0}: Can't find resource for bundle java.ISTil.PropertyResourceBundle, key PE "" is displaying on submit.
+ 
+able to create the tax form for other lob's",Deferred,Medium,CCDEV2,360273,273993,24-JUL-13
+651039,274,Tax forms are not propogating from NONSURVIVING to SURVIVING vis CIS INBOUND MERGE.,Rejected,Medium,CCDEV2,360273,273993,24-JUL-13
+651040,274,Script error is displayed when the subtype conversion from NON IND to INT is done along with ECC addition for a client which had EPT & ERF as N. ,Re-Open,Medium,CCDEV2,360273,298950,22-JAN-14
+651041,274,Unable to add ECC to a HO client. It throws script error,Re-Open,Medium,CCDEV2,360273,298950,28-JAN-14
+651042,274,Comparision popup screen is not displaying on submit while creating a tax form.,Open,High,CCDEV2,360273,273993,24-JUL-13
+651043,275,"when providing invalid values for the field EPT ,Erisa flag and ECC.first it throws the validation messgae as ""Ecc is invalid"".it is wrong it should through the validation as""EPT is invalid"".",Ready-to-Retest,Medium,CCDEV2,360273,273846,24-JUL-13
+651044,275,"Reactivation of sanctioned client is successful
+client id:0231840414 trans_id:11458593
+ 
+Even via online reactivation is successful",Rejected,High,CCDEV2,360273,221129,24-JUL-13
+651045,275,"Isssue1:when providing special characters for short name other then CC  non allowable character.client get created.It is wrong it should throw an validation.
+Issue2:The above issue is occuring in client modify also.",Deferred,High,CCDEV2,360273,273846,24-JUL-13
+651046,275,There are no values for ECC in the downloaded code value reference sheet for NON IND client creation,Open,High,CCDEV2,360273,298950,24-JUL-13
+651047,275,Unable to create NON IND/INT clients via OTS. There is no client created with the given OTS id.,Re-Open,High,CCDEV2,360273,298950,24-JUL-13
+651048,275,when the user close the comparision popup screen(not the close bISTton) which is present at the top most right(X) then again if the user submit the transaction the screen remains as it is.nothing is happening.,Open,High,CCDEV2,360273,273993,24-JUL-13
+651049,275,In the comparision popup screen the fields are not present in order wise.As per design 4.2.1.1.3 it should follow the FATCA order.Like after account name country fields should be displayed bIST now country fields are populated first and then account name which is incorrect.,Re-Open,High,CCDEV2,360273,273993,24-JUL-13
+651050,275,"Incorrect validation thrown - CCS-01552-ERISA Contractual Capacity field is required when ERISA Plan Regulated is Y or O - while trying to create a NON IND client with EPT as 10, ECC as 01 and ERF as Y.
+",Open,Emergency,CCDEV2,360273,298950,24-JUL-13
+651051,275,"When FATCA maintenance template radio bISTton is clicked, download code value reference sheet hyperlink is displayed. Now if the non-individual template radio bISTton is clicked both the code value reference sheets are displayed",Open,Low,CCDEV2,360273,221129,24-JUL-13
+651052,275,"when providing doing business as field as alphabetic characters,it throw the alert message as ""Alphanumeric"".remove the alert messge.",Open,Low,CCDEV2,360273,273846,24-JUL-13
+651055,276,"when modifying client with subtype Agent Principle,providing  special characters for doing business field it throws the hard validation messge.It is wrong .Only soft validation should be thrown.
+User:U008881
+Client Id:0251798307 ",Open,High,CCDEV2,360273,273846,24-JUL-13
+651056,276,"In the User initiated FATCA maintenance report,Tax form id is displayed in the customer id column",Fixed,Medium,CCDEV2,360273,221129,24-JUL-13
+651057,276,"On changing the ""Indicia of U.S. status found for Form W-8 client during due diligence review"" field for any form type
+""FATCA attribISTes update failed: CC-10008 : Error occured while performing database operation"" error is shown in the FATCA maintenance report
+",Open,Emergency,CCDEV2,360273,221129,24-JUL-13
+651058,276,"Uploaded template status is in 'open'  for a very long time in server file list screen
+BIST report got generated ",Open,High,CCDEV2,360273,221129,24-JUL-13
+651059,276,Address field values are not present when we click on the cancel bISTton in the comparision popup screen.,Open,Medium,CCDEV2,360273,273993,24-JUL-13
+651053,276,"When providing less then four characters for doing business as field,the cc non allowable special characters also accepted(i.e like ra$,r=a,$ad etc).It is wrong.it should throwa validation message.",Open,High,CCDEV2,360273,273846,24-JUL-13
+651054,276,"In the comparision popup screen if the user click on Close BISTton and again submit the transaction withoIST modifying any fields, Data got updated successfully.whether again comparision popup screen will be displayed?
+ 
+ this point is not mentioned in the design document.",Open,Medium,CCDEV2,360273,273993,24-JUL-13
+650997,272,No changes to submit is thrown along with a script error when EPT and ERF is added for a client withoIST EPT.,Open,Emergency,CCDEV2,360273,298950,24-JUL-13
+650998,272,"During Client create and modify via inbound , processed flag is not changing to 'Y' in cis_inbound table",Open,High,CCDEV2,360273,221129,24-JUL-13
+650999,272,Unable to create a credit NON IND client withoIST EPT & ERF. The page just reloads on submi,Open,High,CCDEV2,360273,298950,24-JUL-13
+651000,272,The changed info is not displayed properly in CLIENT_AUX_INFO table when ECC is removed for a client with ERF as N. ,Ready-to-Retest,Medium,CCDEV2,360273,298950,24-JUL-13
+651001,272,This looks like an inherent issue however not sure. The EPT value displayed in download as excel option is incorrect. It displays the value as Deferred Compensation Plans instead of ESOPS.,Deferred,Medium,CCDEV2,360273,298950,24-JUL-13
+651002,272,A blank value is inserted as CXI_VALUE in CLIENT_AUX_INFO table with CXI_CD as ECC when ERF is changed from Y to N for a client withoIST ECC.,Open,Medium,CCDEV2,360273,298950,24-JUL-13
+651003,272,Script error is thrown while trying to update the ERF as O from Y and ECC with a new value. ,Open,Medium,CCDEV2,360273,298950,24-JUL-13
+651005,272,"On click of approve, the TSS workitem does not get submitted instead the page just reloads when ECC is entered along with erisa fields for a TSS open client workitem in TSS action list of the reviewer",Open,Medium,CCDEV2,360273,298950,24-JUL-13
+651004,272,"Script error is displayed on load of aNON IND client in act/dea clt screen. Refer clt oid - 220529680, user - U851443",Rejected,Medium,CCDEV2,360273,298950,24-JUL-13
+651006,272,"A script error is thrown in view client pop up which opens on click of the client id hyperlink in view hierarchy screen
+ 
+ISS2:
+Unable to check if the ecc is enabled/disabled for non tss user due to this script error",Re-Open,High,CCDEV2,360273,298950,24-JUL-13
+651007,272,A script error is thrown along with sorry error occured page for an INT client id in view client pop up displayed on click of client id hyperlink in tax form maintenance screen,Open,Medium,CCDEV2,360273,298950,24-JUL-13
+651008,272,"While reprocessing in index orm, it creates two duplicate transaction entries for modifying the ERF from Yes to No and removing the ECC. One transaction is pending for approval, the other transaction is directly updated. However in db, the values are directly updated",Open,Medium,CCDEV2,360273,298950,24-JUL-13
+651009,272,"History is not displaying for the client  if the we select the Entity as Tax Form and Data Element as ""Indicia of U.S. status found for Form W-8 client during due diligence review""
+ 
+And also Account name is displaying in history screen and TAX_FM,HIST_TAX_FM tables  even that tax form is not having any account name which is incorrect.",Deferred,Medium,CCDEV2,360273,273993,24-JUL-13
+651010,272," the field “Indicia of U.S. status found for Form W-8 client during due diligence review” , “Date indicia of U.S. status for W-8 client cured” fields ,are not displaying for update form transactions in the print popup screen. 
+ 
+Issue 2:the field Document received to cure indicia of U.S. status field also is not displaying in the print popup screen",Deferred,Medium,CCDEV2,360273,273993,24-JUL-13
+651011,272,"""CC-20013 : Error while Updating the database: {0}: Can't find resource for bundle java.ISTil.PropertyResourceBundle, key PE "" and ""CAAT5029:INVALID US INDICA DOCUMENT RECEIVED "" is displaying when tried to create a tax form along with  “Indicia of U.S. status found for Form W-8 client during due diligence review” as ""INDICA cURED"" and with the date field.",Open,High,CCDEV2,360273,273993,24-JUL-13
+651012,273,"1.In Report type drop down it is as 'Request FB 2nd Level Review '
+ 
+2.In Report type drop down it is as ' Request send to Sanctions Complete'",Open,Medium,CCDEV2,360273,335208,24-JUL-13
+651013,273,"1.Unable to save the special character '&'
+2.Unable to open the client with trans ID  - 11458062 ",Open,Medium,CCDEV2,360273,335208,24-JUL-13
+651014,273,In New Case Comment after savig the work item with 2500 character and if again open the same work item only 1944 character is displayed . BIST in database 2500 character is saved,Open,Medium,CCDEV2,360273,335208,24-JUL-13
+651015,273,"""clear all"" function is not working as expected for ""select columns to appear in the report"" grid for ""Client List Extract""Report.
+ 
+ 
+Looks like it is the same issue with many reports and also adding this defect to inherent tracker-ES313
+ ",Deferred,Low,CCDEV2,360273,322253,24-JUL-13
+651016,273,"REQ_5:
+The new fields Non Golden Entity Group Role and Non Golden Entity Group ID does not fetch any data in ""Client list extract report"" for a client which already has Non Golden Entity Group Role and Non Golden Entity Group ID.
+ 
+It fetches data only when ""Select all columns"" is selected under ""Select Columns to appear in the report"" in CLE report
+ 
+sample report ID:736986
+when all selcted->736982(this is working fine)
+ ",Open,Medium,CCDEV2,360273,322253,24-JUL-13
+651017,273,The mandatory validation 'ECC is mandatory when ERF is Y/O' is thrown for an INT BU client which is incorrect,Rejected,Medium,CCDEV2,360273,298950,24-JUL-13
+651018,273,"The Error code is wrong.When providing Erisa flag is Y or N and ECC is blank.It throws the validation message as ERISA Contractual Capacity field is required when ERISA Plan Regulated is Y or O  AttribISTes: Code -> CCS-01552  ,bIST error code mentioned in the design document is CCS-01550.",Open,Low,CCDEV2,360273,273846,24-JUL-13
+651019,273,"'There are unsaved changes, do you want to continue' message is displayed incorrectly when there are no changes performed on a INT BU client.",Rejected,Medium,CCDEV2,360273,298950,24-JUL-13
+651020,273,"When a DEA client is activated, Active_since_dt is not updated both in DB and view/modify screen. Client id:0699736107. Trans id:11458219. User:U008881",Open,Medium,CCDEV2,360273,221129,24-JUL-13
+651021,273,"Issue1:When modifying  client,ECC alone is provided for add transaction value get updated,it is wrong it should through  validation.
+ 
+Issue2:When modifying  client,ECC alone is provided as invalid values for add transaction value get updated,it is wrong it should through validation.
+USer:U008881
+Client id:0251798230",Open,Medium,CCDEV2,360273,273846,24-JUL-13
+651022,273,"Unable to open the BAR chart,PIE chart,LINE chart from the MIS search result screen",Open,Medium,CCDEV2,360273,335208,24-JUL-13
+651023,273,"Activate/Deactivate template allows operation types 'a','p','d'
+which is incorrect. Only Capital letters should be allowed",Open,Medium,CCDEV2,360273,221129,24-JUL-13
+651024,273,"Issue1:When creating client with Erisa fields,ECC alone is provided.the client get created with ECC alone.it is wrong.it should through a validation.
+Issue2:The above issue is occuring modify also,when add ECC alone for client it's get updated.It should through an validation.
+ECC is dependent on EPT and Erisa Flag.
+",Duplicate,High,CCDEV2,360273,273846,24-JUL-13
+651025,273,Unable to Add a Tax fom for a Client via Services. Invalid Custome ID or Customer ID not Found in Index is thrown.,Open,Emergency,CCDEV2,360273,235251,24-JUL-13
+651026,273,"Unable to create client with Erisa fields.It throws the validation as ""ERISA Plan Regulated is Mandatory when ERISA Plan Type is provided """,Cannot Reproduce,High,CCDEV2,360273,273846,24-JUL-13
+650960,271,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Open,Emergency,CCDEV2,360273,221129,24-JUL-13
+650961,271,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Open,Emergency,CCDEV2,360273,273846,24-JUL-13
+650962,271,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says ¿You do not have permission to add or modify brazil jurisdiction ¿. ",Rejected,Emergency,CCDEV2,360273,221129,24-JUL-13
+650963,271,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Open,Emergency,CCDEV2,360273,235234,24-JUL-13
+650965,271,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Open,Emergency,CCDEV2,360273,221129,24-JUL-13
+650964,271,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Emergency,CCDEV2,360273,221129,24-JUL-13
+650966,271,"Issue 1:
+When a User tries to provide access for a SID/ GID 'E115085' by providing GID_TYPE as 'Owner Approver', LOB_GRP_CD drop down has a value 'CCR'. Ideally, it should have a Value 'NRG'.
+ 
+ 
+Issue 2:
+LOB_OWNR_CD dropdown should contain all the New Owner ('AS', 'OT', 'IM', 'MM',  'CC' , 'XX', 'TS) Codes along with the existing Owner Code. BIST it doesnt contain the Owner Code 'XX'.
+Owner Code 'XX' is NOT present in LOB_OWNR_CD column in CC_ORG_LOB_MAPPING table",Open,Emergency,CCDEV2,360273,235251,24-JUL-13
+650967,271,"Unable to create a client via Services and the following error message has been displayed.
+ 
+""CC-50034 : Error while sending message to Change Event Queue Linked Exception :MQJE001: Completion Code '2', Reason '2009'.: MQJMS2007: failed to send message to MQ queue"" ",Open,Emergency,CCDEV2,360273,114038,24-JUL-13
+650968,272,Error occured in services is displayed in dev3 for any valid xmls uploaded,Open,Emergency,CCDEV2,360273,221129,24-JUL-13
+650971,275,"While creating a client via online, in ownership tab when the LOB is given as RET, orgcode as any CCR orgcode and searched, no search results found is displayed ",Rejected,Emergency,CCDEV2,360273,221129,24-JUL-13
+650969,273,"Issue 1: When creating a client with OT orgcodes -25701(SAP code-358800), 27506(SAP code -429000) via inbound, client gets created with RD orgcode(88503)
+ 
+Issue 2: Two different ownercodes are displayed for an org code(10344)",Rejected,Emergency,CCDEV2,360273,221129,24-JUL-13
+650970,274,"In approver Action list,when providing comments and save the transaction,it throws the sorry error page.",Open,Emergency,CCDEV2,360273,273846,24-JUL-13
+650972,276,The new tag 'ReturnonlyFATCAprofile' is not existing in XSD,Open,Emergency,CCDEV2,360273,335208,24-JUL-13
+650973,277,All the reports are in queue status for a very long time,Open,Emergency,CCDEV2,360273,221129,24-JUL-13
+650974,278,FATCA details can't be fetched when the 'Return Only FATCA Profile' is blank,Open,Emergency,CCDEV2,360273,335208,24-JUL-13
+650975,279,"Reports are not downloaded when file id is clicked. ""Internet explorer cannot display the page"" is shown",Open,Emergency,CCDEV2,360273,221129,24-JUL-13
+650976,280,"""No search Results are found""is displaying when tried to link an account to a TaxForm ID in ""Tax form account linkage screen""",Open,Emergency,CCDEV2,360273,335208,24-JUL-13
+26034,132,data,Hold,Medium,CCDEV4,264965,264965,18-FEB-14
+650648,280,"In design document for search option 'NT1' Name,Tax Id,Country and City should be present bIST only Name,Tax Id and City is present .",Open,Emergency,CCDEV4,360273,335208,24-JUL-13
+650649,280,"For the user 'U008881' myworklist screen is not updated in dev2. The last transaction shown is  12-jul-13.
+ 
+Unable to check LOB contact because of this issue
+ ",Open,Emergency,CCDEV4,360273,221129,24-JUL-13
+650646,280,"The New fields added (1. Risk Rating Methodology ,2. System Source )are in different positions when compared to design document.
+ ",Open,Emergency,CCDEV4,360273,322253,24-JUL-13
+650647,280,Search Screen is NOT poped up on Click of Search Icon next to ORG_CODE.,Rejected,Emergency,CCDEV4,360273,235251,24-JUL-13
+654553,272,"When providing non allowable special characters for the client long name,Short name and Legal name,It displays the incorrect resonse message.",Open,High,CCDEV2,360273,273846,29-JUL-13
+654554,271," On updating the field, “Indicia of U.S. status found for Form W-8 client during due diligence review” for a PWM tax form it simply shows ""FATCA attributes update failed: "" validation in the report and not the exact reason
+Tax form id:1000002510",Open,High,CCDEV3,360273,221129,27-JUL-13
+654555,195,"Small characters 'c','f','n' are also allowed for indicia field change via FATCA maintenance template",Open,High,CCDEV4,360273,221129,30-JUL-13
+654556,194,"Issue1:
+Validation sheet for BEM is not present in design document.
+ 
+Issue 2:
+As per design document, services requirement point no 4.2.2.3 The W8 Form field “Date indicia of U.S. status for W-8 client cured” will be removed from the existing FATCA Maintenance XSD.
+ 
+but the field “Date indicia of U.S. status for W-8 client cured”  is not removed",Open,Medium,CCDEV5,360273,273993,30-JUL-13
+654557,193,The 'Date of Issuance' field in location specific CBDCIF2 screen does not update the year when the existing value is updated to the different year. ,Open,Low,CCDEV5,360273,220838,31-JUL-13
+26102,192,Testing,Hold,Medium,CCDEV4,264965,264965,03-MAR-14
+26103,192,Testing,Hold,Medium,CCDEV4,264965,264965,09-MAR-14
+651066,277,"Issue1:
+Validation sheet for BEM is not present in design document.
+ 
+Issue 2:
+As per design document, services requirement point no 4.2.2.3 The W8 Form field “Date indicia of U.S. status for W-8 client cured” will be removed from the existing FATCA Maintenance XSD.
+ 
+bIST the field “Date indicia of U.S. status for W-8 client cured”  is not removed",Open,Medium,CCDEV2,360273,273993,24-JUL-13
+651027,274,"When a client with only non-CLT role is changed from DEA-ACT, Donot trade reason code is still ""not active""
+It should be changed to ""non client role""",Open,Medium,CCDEV2,360273,221129,24-JUL-13
+654546,193,"In the User initiated FATCA maintenance report,Tax form id is displayed in the customer id column",Re-Open,Medium,CCDEV7,360273,221129,28-JUL-13
+654547,192,"On changing the ""Indicia of U.S. status found for Form W-8 client during due diligence review"" field for any form type
+""FATCA attributes update failed: CC-10008 : Error occured while performing database operation"" error is shown in the FATCA maintenance report
+",Open,Low,CCDEV1,360273,221129,28-JUL-13
+654548,277,"Uploaded template status is in 'open'  for a very long time in server file list screen
+But report got generated ",Rejected,High,CCDEV2,360273,221129,29-JUL-13
+654549,276,Address field values are not present when we click on the cancel button in the comparision popup screen.,Open,Low,CCDEV3,360273,273993,29-JUL-13
+654550,275,Cancel BEM upload subMenu is not present under events menu,Open,High,CCDEV4,360273,221129,29-JUL-13
+654551,274,Unable to create CB client via BEM by providing LOB priority as CAB and Priority Value as M,Open,Medium,CCDEV5,360273,346258,29-JUL-13
+654552,273,Incorrect validation displayed during MCC NON IND client create.,Open,Low,CCDEV1,360273,298950,29-JUL-13
+654558,192,Core workitem is converted to Non-core work item.,Pending,Emergency,CCDEV2,360273,346583,31-JUL-13
+654559,280,Account Name/Legal Name is not displaying the comparision popup screen even though it matches the rule criteria and modifying the account name in the tax form maintenence screen.,Ready-to-Retest,Medium,CCDEV3,360273,273993,03-AUG-13
+654560,279,"when providing CC non allowable special charcters for legal name,short name and Doing business as name for Mass client create,it should through an error message as ""CCS-01156-Short Name cannot contain special characters except {0}""
+It is wrong it should displays the full validation message.
+User:U008881
+File id:6188",Open,Medium,CCDEV4,360273,273846,03-AUG-13
+654561,278,"when providing fully special characters for name 1 and name 2 in CIS inbound,it throws the validation message.but name we can able to provide fully special character.",Fixed,Medium,CCDEV5,360273,273846,03-AUG-13
+654562,277,CCS-01552-ERISA Contractual Capacity field is required when ERISA Plan Regulated is Y or O - incorrect validation is thrown when ECC is not entered with ERF as Y/O while creating a VEN role client in MCC,Deferred,Medium,CCDEV1,360273,298950,03-AUG-13
+654563,276,In Comparision pop up screen Country with US is not displaying,Hold,Emergency,CCDEV2,360273,335208,03-AUG-13
+654541,273,"When FATCA maintenance template radio button is clicked, download code value reference sheet hyperlink is displayed. Now if the non-individual template radio button is clicked both the code value reference sheets are displayed",Deferred,Emergency,CCDEV2,360273,221129,28-JUL-13
+654542,272,"when providing doing business as field as alphabetic characters,it throw the alert message as ""Alphanumeric"".remove the alert messge.",Hold,Low,CCDEV3,360273,273846,28-JUL-13
+654543,271,"When providing less then four characters for doing business as field,the cc non allowable special characters also accepted(i.e like ra$,r=a,$ad etc).It is wrong.it should throwa validation message.",Cannot Reproduce,Low,CCDEV4,360273,273846,28-JUL-13
+654544,195,"In the comparision popup screen if the user click on Close Button and again submit the transaction without modifying any fields, Data got updated successfully.whether again comparision popup screen will be displayed?
+ 
+ this point is not mentioned in the design document.",Duplicate,Low,CCDEV5,360273,273993,28-JUL-13
+654545,194,"when modifying client with subtype Agent Principle,providing  special characters for doing business field it throws the hard validation messge.It is wrong .Only soft validation should be thrown.
+User:U008881
+Client Id:0251798307 ",Open,High,CCDEV6,360273,273846,28-JUL-13
+650603,276,"When providing less then four characters for doing business as field,the cc non allowable special characters also accepted(i.e like ra$,r=a,$ad etc).It is wrong.it should throwa validation message.",Open,Emergency,CCDEV4,360273,273846,24-JUL-13
+650604,276,"In the comparision popup screen if the user click on Close BISTton and again submit the transaction withoIST modifying any fields, Data got updated successfully.whether again comparision popup screen will be displayed?
+ 
+ this point is not mentioned in the design document.",Open,Emergency,CCDEV4,360273,273993,24-JUL-13
+650605,276,"when modifying client with subtype Agent Principle,providing  special characters for doing business field it throws the hard validation messge.It is wrong .Only soft validation should be thrown.
+User:U008881
+Client Id:0251798307 ",Open,Emergency,CCDEV4,360273,273846,24-JUL-13
+650606,276,"In the User initiated FATCA maintenance report,Tax form id is displayed in the customer id column",Fixed,Emergency,CCDEV4,360273,221129,24-JUL-13
+650607,276,"On changing the ""Indicia of U.S. status found for Form W-8 client during due diligence review"" field for any form type
+""FATCA attribISTes update failed: CC-10008 : Error occured while performing database operation"" error is shown in the FATCA maintenance report
+",Open,Emergency,CCDEV4,360273,221129,24-JUL-13
+650601,275,"When FATCA maintenance template radio bISTton is clicked, download code value reference sheet hyperlink is displayed. Now if the non-individual template radio bISTton is clicked both the code value reference sheets are displayed",Open,Emergency,CCDEV4,360273,221129,24-JUL-13
+650602,275,"when providing doing business as field as alphabetic characters,it throw the alert message as ""Alphanumeric"".remove the alert messge.",Open,Emergency,CCDEV4,360273,273846,24-JUL-13
+650608,276,"Uploaded template status is in 'open'  for a very long time in server file list screen
+BIST report got generated ",Open,Emergency,CCDEV4,360273,221129,24-JUL-13
+650609,276,Address field values are not present when we click on the cancel bISTton in the comparision popup screen.,Open,Emergency,CCDEV4,360273,273993,24-JUL-13
+650610,276,Cancel BEM upload subMenu is not present under events menu,Open,Emergency,CCDEV4,360273,221129,24-JUL-13
+650611,276,Unable to create CB client via BEM by providing LOB priority as CAB and Priority Value as M,Open,Emergency,CCDEV4,360273,346258,24-JUL-13
+650612,276,Incorrect validation displayed during MCC NON IND client create.,Open,Emergency,CCDEV4,360273,298950,24-JUL-13
+650613,276,"When providing non allowable special characters for the client long name,Short name and Legal name,It displays the incorrect resonse message.",Deferred,Emergency,CCDEV4,360273,273846,24-JUL-13
+650614,277," On updating the field, “Indicia of U.S. status found for Form W-8 client during due diligence review” for a PWM tax form it simply shows ""FATCA attribISTes update failed: "" validation in the report and not the exact reason
+Tax form id:1000002510",Open,Emergency,CCDEV4,360273,221129,24-JUL-13
+650615,277,"Small characters 'c','f','n' are also allowed for indicia field change via FATCA maintenance template",Open,Emergency,CCDEV4,360273,221129,24-JUL-13
+650616,277,"Issue1:
+Validation sheet for BEM is not present in design document.
+ 
+Issue 2:
+As per design document, services requirement point no 4.2.2.3 The W8 Form field “Date indicia of U.S. status for W-8 client cured” will be removed from the existing FATCA Maintenance XSD.
+ 
+bIST the field “Date indicia of U.S. status for W-8 client cured”  is not removed",Open,Emergency,CCDEV4,360273,273993,24-JUL-13
+650617,277,The 'Date of Issuance' field in location specific CBDCIF2 screen does not update the year when the existing value is updated to the different year. ,Open,Emergency,CCDEV4,360273,164004,24-JUL-13
+650618,277,Core workitem is converted to Non-core work item.,Open,Emergency,CCDEV4,360273,346583,24-JUL-13
+650619,277,Account Name/Legal Name is not displaying the comparision popup screen even though it matches the rule criteria and modifying the account name in the tax form maintenence screen.,Open,Emergency,CCDEV4,360273,273993,24-JUL-13
+650620,277,"when providing CC non allowable special charcters for legal name,short name and Doing business as name for Mass client create,it should through an error message as ""CCS-01156-Short Name cannot contain special characters except {0}""
+It is wrong it should displays the full validation message.
+User:U008881
+File id:6188",Fixed,Emergency,CCDEV4,360273,273846,24-JUL-13
+650621,277,"when providing fully special characters for name 1 and name 2 in CIS inbound,it throws the validation message.bIST name we can able to provide fully special character.",Open,Emergency,CCDEV4,360273,273846,19-JAN-14
+650624,278,"Tax Form is not updated successfully when W8 document status is provided as ""Active Certified"" and Indicia of U.S. status found for Form W-8 client during due diligence review is provided as ""Indica cured"".
+ 
+The page remains as it is after submit
+ 
+tax form is not created only when these fields are given",Open,Emergency,CCDEV4,360273,273993,24-JUL-13
+650625,278,values which are provided while creating a taxform are not present after form is created,Open,Emergency,CCDEV4,360273,273993,24-JUL-13
+650626,278,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Open,Emergency,CCDEV4,360273,221129,24-JUL-13
+650627,278,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Open,Emergency,CCDEV4,360273,273846,24-JUL-13
+650622,277,CCS-01552-ERISA Contractual Capacity field is required when ERISA Plan Regulated is Y or O - incorrect validation is thrown when ECC is not entered with ERF as Y/O while creating a VEN role client in MCC,Open,Emergency,CCDEV4,360273,298950,24-JUL-13
+650623,278,In Comparision pop up screen Country with US is not displaying,Open,Emergency,CCDEV4,360273,335208,24-JUL-13
+650630,278,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Emergency,CCDEV4,360273,221129,24-JUL-13
+650631,278,"Issue 1:
+When a User tries to provide access for a SID/ GID 'E115085' by providing GID_TYPE as 'Owner Approver', LOB_GRP_CD drop down has a value 'CCR'. Ideally, it should have a Value 'NRG'.
+ 
+ 
+Issue 2:
+LOB_OWNR_CD dropdown should contain all the New Owner ('AS', 'OT', 'IM', 'MM',  'CC' , 'XX', 'TS) Codes along with the existing Owner Code. BIST it doesnt contain the Owner Code 'XX'.
+Owner Code 'XX' is NOT present in LOB_OWNR_CD column in CC_ORG_LOB_MAPPING table",Open,Emergency,CCDEV4,360273,235251,24-JUL-13
+650628,278,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Emergency,CCDEV4,360273,221129,24-JUL-13
+650629,278,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Open,Emergency,CCDEV4,360273,235234,24-JUL-13
+650632,279,"Issue 1:
+When a User tries to provide access for a SID/ GID 'E115085' by providing GID_TYPE as 'Owner Approver', LOB_GRP_CD drop down has a value 'CCR'. Ideally, it should have a Value 'NRG'.
+ 
+ 
+Issue 2:
+LOB_OWNR_CD dropdown should contain all the New Owner ('AS', 'OT', 'IM', 'MM',  'CC' , 'XX', 'TS) Codes along with the existing Owner Code. BIST it doesnt contain the Owner Code 'XX'.
+Owner Code 'XX' is NOT present in LOB_OWNR_CD column in CC_ORG_LOB_MAPPING table",Open,Emergency,CCDEV4,360273,235251,24-JUL-13
+650633,279,"Unable to create a client via Services and the following error message has been displayed.
+ 
+""CC-50034 : Error while sending message to Change Event Queue Linked Exception :MQJE001: Completion Code '2', Reason '2009'.: MQJMS2007: failed to send message to MQ queue"" ",Open,Emergency,CCDEV4,360273,114038,24-JUL-13
+650634,279,Error occured in services is displayed in dev3 for any valid xmls uploaded,Open,Emergency,CCDEV4,360273,221129,24-JUL-13
+650635,279,"Issue 1: When creating a client with OT orgcodes -25701(SAP code-358800), 27506(SAP code -429000) via inbound, client gets created with RD orgcode(88503)
+ 
+Issue 2: Two different ownercodes are displayed for an org code(10344)",Rejected,Emergency,CCDEV4,360273,221129,24-JUL-13
+650636,279,"In approver Action list,when providing comments and save the transaction,it throws the sorry error page.",Open,Emergency,CCDEV4,360273,273846,24-JUL-13
+650637,279,"While creating a client via online, in ownership tab when the LOB is given as RET, orgcode as any CCR orgcode and searched, no search results found is displayed ",Rejected,Emergency,CCDEV4,360273,221129,24-JUL-13
+650638,279,The new tag 'ReturnonlyFATCAprofile' is not existing in XSD,Open,Emergency,CCDEV4,360273,335208,24-JUL-13
+650639,279,All the reports are in queue status for a very long time,Open,Emergency,CCDEV4,360273,221129,24-JUL-13
+650640,280,FATCA details can't be fetched when the 'Return Only FATCA Profile' is blank,Open,Emergency,CCDEV4,360273,335208,24-JUL-13
+650641,280,"Reports are not downloaded when file id is clicked. ""Internet explorer cannot display the page"" is shown",Open,Emergency,CCDEV4,360273,221129,24-JUL-13
+650642,280,"""No search Results are found""is displaying when tried to link an account to a TaxForm ID in ""Tax form account linkage screen""",Open,Emergency,CCDEV4,360273,335208,24-JUL-13
+650643,280,"Unable to Create a Client via BEM. ""CC-50001 : Client Central has encountered an error. Please contact the System Administrator"" is thrown on Upload.",Cannot Reproduce,Emergency,CCDEV4,360273,356642,02-DEC-13
+650644,280,"when creating client via ALD feed,it throws the script error.",Open,Emergency,CCDEV4,360273,273846,24-JUL-13
+650645,280,Unable to perform Transactions in Index ORM. “Sorry! Error Occured while Processing your request” is thrown.,Open,Emergency,CCDEV4,360273,235251,24-JUL-13
+1223192,195,"Confirm whether on Merging two clients as below S(ACC w9 & ACU w9 with same lob, Expired w9 ) NS(W9 SUP) validation will be thrown as two active profiles are present for S or tranasction will be updated successfully",Hold,High,CCDEV1,251753,302952,01-JAN-14
+26142,192,desc,Open,Medium,CCDEV4,264965,264965,18-MAR-14
+26143,192,desc,Hold,Medium,CCDEV4,264965,264965,18-MAR-14
+1304161,195,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id",Hold,Emergency,CCDEV1,221129,311290,25-MAR-13
+1304164,195,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id",Re-Open,Emergency,CCDEV1,221129,235251,25-MAR-13
+651069,277,Account Name/Legal Name is not displaying the comparision popup screen even though it matches the rule criteria and modifying the account name in the tax form maintenence screen.,Open,Medium,CCDEV2,360273,273993,24-JUL-13
+651070,277,"when providing CC non allowable special charcters for legal name,short name and Doing business as name for Mass client create,it should through an error message as ""CCS-01156-Short Name cannot contain special characters except {0}""
+It is wrong it should displays the full validation message.
+User:U008881
+File id:6188",Fixed,Medium,CCDEV2,360273,273846,24-JUL-13
+651071,277,"when providing fully special characters for name 1 and name 2 in CIS inbound,it throws the validation message.bIST name we can able to provide fully special character.",Open,Medium,CCDEV2,360273,273846,24-JUL-13
+651072,277,CCS-01552-ERISA Contractual Capacity field is required when ERISA Plan Regulated is Y or O - incorrect validation is thrown when ECC is not entered with ERF as Y/O while creating a VEN role client in MCC,Open,Medium,CCDEV2,360273,298950,24-JUL-13
+651067,277,The 'Date of Issuance' field in location specific CBDCIF2 screen does not update the year when the existing value is updated to the different year. ,Open,Low,CCDEV2,360273,164004,24-JUL-13
+651068,277,Core workitem is converted to Non-core work item.,Open,Emergency,CCDEV2,360273,346583,24-JUL-13
+651073,278,In Comparision pop up screen Country with US is not displaying,Open,Emergency,CCDEV2,360273,335208,24-JUL-13
+651074,278,"Tax Form is not updated successfully when W8 document status is provided as ""Active Certified"" and Indicia of U.S. status found for Form W-8 client during due diligence review is provided as ""Indica cured"".
+ 
+The page remains as it is after submit
+ 
+tax form is not created only when these fields are given",Open,High,CCDEV2,360273,273993,24-JUL-13
+651075,278,values which are provided while creating a taxform are not present after form is created,Open,High,CCDEV2,360273,273993,24-JUL-13
+651076,278,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Open,High,CCDEV1,360273,221129,24-JUL-13
+651077,278,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Open,High,CCDEV1,360273,273846,24-JUL-13
+651078,278,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV1,360273,221129,24-JUL-13
+651079,278,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Open,Medium,CCDEV1,360273,235234,24-JUL-13
+651080,278,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV1,360273,221129,24-JUL-13
+651081,278,"Issue 1:
+When a User tries to provide access for a SID/ GID 'E115085' by providing GID_TYPE as 'Owner Approver', LOB_GRP_CD drop down has a value 'CCR'. Ideally, it should have a Value 'NRG'.
+ 
+ 
+Issue 2:
+LOB_OWNR_CD dropdown should contain all the New Owner ('AS', 'OT', 'IM', 'MM',  'CC' , 'XX', 'TS) Codes along with the existing Owner Code. BIST it doesnt contain the Owner Code 'XX'.
+Owner Code 'XX' is NOT present in LOB_OWNR_CD column in CC_ORG_LOB_MAPPING table",Open,Emergency,CCDEV1,360273,235251,24-JUL-13
+26101,195,DESC,Hold,Medium,CCDEV4,264965,264965,09-MAR-14
+651082,279,"Issue 1:
+When a User tries to provide access for a SID/ GID 'E115085' by providing GID_TYPE as 'Owner Approver', LOB_GRP_CD drop down has a value 'CCR'. Ideally, it should have a Value 'NRG'.
+ 
+ 
+Issue 2:
+LOB_OWNR_CD dropdown should contain all the New Owner ('AS', 'OT', 'IM', 'MM',  'CC' , 'XX', 'TS) Codes along with the existing Owner Code. BIST it doesnt contain the Owner Code 'XX'.
+Owner Code 'XX' is NOT present in LOB_OWNR_CD column in CC_ORG_LOB_MAPPING table",Open,Emergency,CCDEV1,360273,235251,24-JUL-13
+651083,279,"Unable to create a client via Services and the following error message has been displayed.
+ 
+""CC-50034 : Error while sending message to Change Event Queue Linked Exception :MQJE001: Completion Code '2', Reason '2009'.: MQJMS2007: failed to send message to MQ queue"" ",Open,Emergency,CCDEV1,360273,114038,24-JUL-13
+651084,279,Error occured in services is displayed in dev3 for any valid xmls uploaded,Open,Emergency,CCDEV1,360273,221129,24-JUL-13
+651085,279,"Issue 1: When creating a client with OT orgcodes -25701(SAP code-358800), 27506(SAP code -429000) via inbound, client gets created with RD orgcode(88503)
+ 
+Issue 2: Two different ownercodes are displayed for an org code(10344)",Rejected,Medium,CCDEV1,360273,221129,24-JUL-13
+651086,279,"In approver Action list,when providing comments and save the transaction,it throws the sorry error page.",Open,Emergency,CCDEV1,360273,273846,24-JUL-13
+651087,279,"While creating a client via online, in ownership tab when the LOB is given as RET, orgcode as any CCR orgcode and searched, no search results found is displayed ",Rejected,High,CCDEV1,360273,221129,24-JUL-13
+651090,280,FATCA details can't be fetched when the 'Return Only FATCA Profile' is blank,Open,High,CCDEV1,360273,335208,24-JUL-13
+651091,280,"Reports are not downloaded when file id is clicked. ""Internet explorer cannot display the page"" is shown",Open,Medium,CCDEV1,360273,221129,24-JUL-13
+651092,280,"""No search Results are found""is displaying when tried to link an account to a TaxForm ID in ""Tax form account linkage screen""",Open,High,CCDEV1,360273,335208,24-JUL-13
+651093,280,"Unable to Create a Client via BEM.
+""CC-50001 : Client Central has encountered an error. Please contact the System Administrator"" is thrown on Upload.",Open,Emergency,CCDEV1,360273,235251,24-JUL-13
+651094,280,"when creating client via ALD feed,it throws the script error.",Open,Emergency,CCDEV1,360273,273846,24-JUL-13
+651095,280,Unable to perform Transactions in Index ORM. “Sorry! Error Occured while Processing your request” is thrown.,Open,Emergency,CCDEV1,360273,235251,24-JUL-13
+651088,279,The new tag 'ReturnonlyFATCAprofile' is not existing in XSD,Open,Medium,CCDEV1,360273,335208,24-JUL-13
+651089,279,All the reports are in queue status for a very long time,Open,Emergency,CCDEV1,360273,221129,24-JUL-13
+1223170,195,"When performing merge transaction transaction for the below condition, Surviving as :Prospective client Non Surviving :Active client it should throw an error message as ""Active Client cannot merge with the Prospective Client "". ¿ ResponseMsg¿ Input field is missing - PermanentCountryOfResidence¿ Attributes: Code -> CCS-77106¿ ResponseMsg¿ Input field is missing - W9EntityType¿ Attributes: Code -> CCS-77106¿ ResponseMsg¿ Input field is missing - W8ForeignEntityType¿ Attributes: Code -> CCS-77106¿ ResponseMsg¿ Input field is missing - W8FormType¿ Attributes: Code -> CCS-77106¿ User :U008881 S client id :0921797382 NS client :0921797439 ¿ Xml has been attached for reference. ",Open,Medium,CCDEV1,374187,312323,29-DEC-13
+651096,280,"The New fields added (1. Risk Rating Methodology ,2. System Source )are in different positions when compared to design document.
+ ",Open,Medium,CCDEV1,360273,322253,24-JUL-13
+651097,280,Search Screen is NOT poped up on Click of Search Icon next to ORG_CODE.,Rejected,Emergency,CCDEV1,360273,235251,24-JUL-13
+651098,280,"In design document for search option 'NT1' Name,Tax Id,Country and City should be present bIST only Name,Tax Id and City is present .",Open,Medium,CCDEV1,360273,335208,24-JUL-13
+651099,280,"For the user 'U008881' myworklist screen is not updated in dev2. The last transaction shown is  12-jul-13.
+ 
+Unable to check LOB contact because of this issue
+ ",Open,Medium,CCDEV1,360273,221129,24-JUL-13
+654456,274,"Issue 1:
+When a User tries to provide access for a SID/ GID 'E115085' by providing GID_TYPE as 'Owner Approver', LOB_GRP_CD drop down has a value 'CCR'. Ideally, it should have a Value 'NRG'.
+ 
+ 
+Issue 2:
+LOB_OWNR_CD dropdown should contain all the New Owner ('AS', 'OT', 'IM', 'MM',  'CC' , 'XX', 'TS) Codes along with the existing Owner Code. But it doesnt contain the Owner Code 'XX'.
+Owner Code 'XX' is NOT present in LOB_OWNR_CD column in CC_ORG_LOB_MAPPING table",Fixed,Emergency,CCDEV7,360273,279020,08-JUL-13
+654457,273,"Unable to create a client via Services and the following error message has been displayed.   ""CC-50034 : Error while sending message to Change Event Queue Linked Exception :MQJE001: Completion Code '2', Reason '2009'.: MQJMS2007: failed to send message to MQ queue"" ",Deferred,Emergency,CCDEV2,360273,114038,08-JUL-13
+654458,272,Error occured in services is displayed in dev3 for any valid xmls uploaded,Hold,High,CCDEV3,360273,221129,12-JUL-13
+654459,271,"Issue 1: When creating a client with OT orgcodes -25701(SAP code-358800), 27506(SAP code -429000) via inbound, client gets created with RD orgcode(88503)
+ 
+Issue 2: Two different ownercodes are displayed for an org code(10344)",Cannot Reproduce,Medium,CCDEV4,360273,221129,09-JUL-13
+654460,195,"In approver Action list,when providing comments and save the transaction,it throws the sorry error page.",Duplicate,Low,CCDEV5,360273,273846,09-JUL-13
+654450,280,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Open,Medium,CCDEV1,360273,221129,25-APR-13
+654451,279,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Open,Low,CCDEV2,360273,273846,26-APR-13
+654452,278,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Open,Emergency,CCDEV3,360273,221129,24-JUL-13
+654453,277,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Pending,Emergency,CCDEV4,360273,235234,25-JUL-13
+654454,276,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Ready-to-Retest,High,CCDEV5,360273,221129,10-JUL-13
+654490,271,The changed info is not displayed properly in CLIENT_AUX_INFO table when ECC is removed for a client with ERF as N. ,Open,Emergency,CCDEV3,360273,298950,21-JUL-13
+654491,195,This looks like an inherent issue however not sure. The EPT value displayed in download as excel option is incorrect. It displays the value as Deferred Compensation Plans instead of ESOPS.,Open,Emergency,CCDEV4,360273,298950,21-JUL-13
+654492,194,A blank value is inserted as CXI_VALUE in CLIENT_AUX_INFO table with CXI_CD as ECC when ERF is changed from Y to N for a client without ECC.,Open,Emergency,CCDEV5,360273,298950,21-JUL-13
+654493,193,Script error is thrown while trying to update the ERF as O from Y and ECC with a new value. ,Open,Emergency,CCDEV1,360273,298950,21-JUL-13
+654494,192,"Script error is displayed on load of aNON IND client in act/dea clt screen. Refer clt oid - 220529680, user - U851443",Open,Low,CCDEV2,360273,298950,18-JUL-13
+654495,280,"On click of approve, the TSS workitem does not get submitted instead the page just reloads when ECC is entered along with erisa fields for a TSS open client workitem in TSS action list of the reviewer",Pending,Low,CCDEV3,360273,298950,22-JUL-13
+654488,273,"During Client create and modify via inbound , processed flag is not changing to 'Y' in cis_inbound table",Open,Medium,CCDEV6,360273,221129,21-JUL-13
+654489,272,Unable to create a credit NON IND client without EPT & ERF. The page just reloads on submi,Open,Low,CCDEV7,360273,298950,21-JUL-13
+654496,279,"A script error is thrown in view client pop up which opens on click of the client id hyperlink in view hierarchy screen
+ 
+ISS2:
+Unable to check if the ecc is enabled/disabled for non tss user due to this script error",Ready-to-Retest,Low,CCDEV4,360273,298950,23-JUL-13
+582179,192,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV1,360273,221129,24-JUL-13
+582181,194,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Open,High,CCDEV1,360273,273846,24-JUL-13
+582182,195,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV1,360273,221129,24-JUL-13
+582183,192,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Open,Medium,CCDEV1,360273,235234,24-JUL-13
+582184,193,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV1,360273,221129,24-JUL-13
+582279,192,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV1,360273,221129,24-JUL-13
+582281,194,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Open,High,CCDEV1,360273,273846,24-JUL-13
+582282,195,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV1,360273,221129,24-JUL-13
+582283,194,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Open,Medium,CCDEV1,360273,235234,24-JUL-13
+582284,195,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV1,360273,221129,24-JUL-13
+654497,278,A script error is thrown along with sorry error occured page for an INT client id in view client pop up displayed on click of client id hyperlink in tax form maintenance screen,Open,High,CCDEV5,360273,298950,24-JUL-13
+654498,277,"While reprocessing in index orm, it creates two duplicate transaction entries for modifying the ERF from Yes to No and removing the ECC. One transaction is pending for approval, the other transaction is directly updated. However in db, the values are directly updated",Fixed,Emergency,CCDEV1,360273,298950,25-JUL-13
+654499,276,"History is not displaying for the client  if the we select the Entity as Tax Form and Data Element as ""Indicia of U.S. status found for Form W-8 client during due diligence review""
+ 
+And also Account name is displaying in history screen and TAX_FM,HIST_TAX_FM tables  even that tax form is not having any account name which is incorrect.",Deferred,Emergency,CCDEV1,360273,273993,01-SEP-13
+654500,275," the field “Indicia of U.S. status found for Form W-8 client during due diligence review” , “Date indicia of U.S. status for W-8 client cured” fields ,are not displaying for update form transactions in the print popup screen. 
+ 
+Issue 2:the field Document received to cure indicia of U.S. status field also is not displaying in the print popup screen",Hold,Emergency,CCDEV2,360273,273993,27-JUL-13
+582185,194,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Open,High,CCDEV1,360273,221129,24-JUL-13
+582186,195,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Open,High,CCDEV1,360273,273846,24-JUL-13
+582187,192,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV1,360273,221129,24-JUL-13
+582188,193,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Open,Medium,CCDEV1,360273,235234,24-JUL-13
+582189,194,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV1,360273,221129,24-JUL-13
+582190,195,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Open,High,CCDEV1,360273,221129,24-JUL-13
+582191,192,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Open,High,CCDEV1,360273,273846,24-JUL-13
+582285,192,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Open,High,CCDEV1,360273,221129,24-JUL-13
+582286,193,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Open,High,CCDEV1,360273,273846,24-JUL-13
+582287,194,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV1,360273,221129,24-JUL-13
+582288,195,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Open,Medium,CCDEV1,360273,235234,24-JUL-13
+582289,192,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV1,360273,221129,24-JUL-13
+582290,193,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Open,High,CCDEV1,360273,221129,24-JUL-13
+582291,194,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Open,High,CCDEV1,360273,273846,24-JUL-13
+654501,274,"""CC-20013 : Error while Updating the database: {0}: Can't find resource for bundle java.util.PropertyResourceBundle, key PE "" and ""CAAT5029:INVALID US INDICA DOCUMENT RECEIVED "" is displaying when tried to create a tax form along with  “Indicia of U.S. status found for Form W-8 client during due diligence review” as ""INDICA cURED"" and with the date field.",Cannot Reproduce,Emergency,CCDEV3,360273,273993,28-JUL-13
+654502,273,"1.In Report type drop down it is as 'Request FB 2nd Level Review '
+ 
+2.In Report type drop down it is as ' Request send to Sanctions Complete'",Duplicate,Emergency,CCDEV4,360273,335208,29-JUL-13
+654503,272,"1.Unable to save the special character '&'
+2.Unable to open the client with trans ID  - 11458062 ",Open,Emergency,CCDEV5,360273,335208,30-JUL-13
+582193,194,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Open,Medium,CCDEV1,360273,235234,24-JUL-13
+582194,195,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV1,360273,221129,24-JUL-13
+582195,192,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Open,High,CCDEV1,360273,221129,24-JUL-13
+582196,193,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Open,High,CCDEV1,360273,273846,24-JUL-13
+582197,194,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV1,360273,221129,24-JUL-13
+582292,195,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV1,360273,221129,24-JUL-13
+582293,192,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Open,Medium,CCDEV1,360273,235234,24-JUL-13
+582294,193,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV1,360273,221129,24-JUL-13
+582295,194,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Open,High,CCDEV1,360273,221129,24-JUL-13
+582296,195,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Open,High,CCDEV1,360273,273846,24-JUL-13
+582297,192,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV1,360273,221129,24-JUL-13
+654504,271,In New Case Comment after savig the work item with 2500 character and if again open the same work item only 1944 character is displayed . But in database 2500 character is saved,Re-Open,Emergency,CCDEV6,360273,335208,31-JUL-13
+654505,195,"""clear all"" function is not working as expected for ""select columns to appear in the report"" grid for ""Client List Extract""Report.
+ 
+ 
+Looks like it is the same issue with many reports and also adding this defect to inherent tracker-ES313
+ ",Open,Emergency,CCDEV7,360273,322253,01-AUG-13
+654506,194,"REQ_5:
+The new fields Non Golden Entity Group Role and Non Golden Entity Group ID does not fetch any data in ""Client list extract report"" for a client which already has Non Golden Entity Group Role and Non Golden Entity Group ID.
+ 
+It fetches data only when ""Select all columns"" is selected under ""Select Columns to appear in the report"" in CLE report
+ 
+sample report ID:736986
+when all selcted->736982(this is working fine)
+ ",Rejected,High,CCDEV4,360273,322253,02-AUG-13
+654507,193,The mandatory validation 'ECC is mandatory when ERF is Y/O' is thrown for an INT BU client which is incorrect,Open,Medium,CCDEV5,360273,298950,03-AUG-13
+582200,193,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Open,High,CCDEV1,360273,221129,24-JUL-13
+582201,194,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Open,High,CCDEV1,360273,273846,24-JUL-13
+582202,195,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV1,360273,221129,24-JUL-13
+582203,192,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Open,Medium,CCDEV1,360273,235234,24-JUL-13
+582205,194,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Open,High,CCDEV1,360273,221129,24-JUL-13
+582198,195,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Open,Medium,CCDEV1,360273,235234,24-JUL-13
+582199,192,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV1,360273,221129,24-JUL-13
+582298,193,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Open,Medium,CCDEV1,360273,235234,24-JUL-13
+582299,194,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV1,360273,221129,24-JUL-13
+582300,195,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Open,High,CCDEV1,360273,221129,24-JUL-13
+582301,192,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Open,High,CCDEV1,360273,273846,24-JUL-13
+582302,193,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV1,360273,221129,24-JUL-13
+582303,194,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Open,Medium,CCDEV1,360273,235234,24-JUL-13
+582305,192,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Open,High,CCDEV1,360273,221129,24-JUL-13
+654508,192,"The Error code is wrong.When providing Erisa flag is Y or N and ECC is blank.It throws the validation message as ERISA Contractual Capacity field is required when ERISA Plan Regulated is Y or O  Attributes: Code -> CCS-01552  ,but error code mentioned in the design document is CCS-01550.",Open,Low,CCDEV1,360273,273846,04-AUG-13
+654509,280,"'There are unsaved changes, do you want to continue' message is displayed incorrectly when there are no changes performed on a INT BU client.",Open,Emergency,CCDEV2,360273,298950,05-AUG-13
+654510,279,"When a DEA client is activated, Active_since_dt is not updated both in DB and view/modify screen. Client id:0699736107. Trans id:11458219. User:U008881",Open,Emergency,CCDEV3,360273,221129,06-AUG-13
+654511,278,"Issue1:When modifying  client,ECC alone is provided for add transaction value get updated,it is wrong it should through  validation.
+ 
+Issue2:When modifying  client,ECC alone is provided as invalid values for add transaction value get updated,it is wrong it should through validation.
+USer:U008881
+Client id:0251798230",Open,High,CCDEV2,360273,273846,24-JUL-13
+654512,277,"Unable to open the BAR chart,PIE chart,LINE chart from the MIS search result screen",Open,Medium,CCDEV5,360273,335208,23-JUL-13
+654513,276,"Activate/Deactivate template allows operation types 'a','p','d' which is incorrect. Only Capital letters should be allowed",Open,Low,CCDEV4,360273,221129,25-JUL-13
+582204,193,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV1,360273,221129,24-JUL-13
+582206,195,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Open,High,CCDEV1,360273,273846,24-JUL-13
+582207,192,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV1,360273,221129,24-JUL-13
+582208,193,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Open,Medium,CCDEV1,360273,235234,24-JUL-13
+582209,194,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV1,360273,221129,24-JUL-13
+582304,195,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV1,360273,221129,24-JUL-13
+582306,193,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Open,High,CCDEV1,360273,273846,24-JUL-13
+582307,194,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV1,360273,221129,24-JUL-13
+582308,195,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Open,Medium,CCDEV1,360273,235234,24-JUL-13
+582309,192,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV1,360273,221129,24-JUL-13
+654514,275,"Issue1:When creating client with Erisa fields,ECC alone is provided.the client get created with ECC alone.it is wrong.it should through a validation.
+Issue2:The above issue is occuring modify also,when add ECC alone for client it's get updated.It should through an validation.
+ECC is dependent on EPT and Erisa Flag.
+",Open,Emergency,CCDEV5,360273,273846,06-SEP-13
+654515,274,Unable to Add a Tax fom for a Client via Services. Invalid Custome ID or Customer ID not Found in Index is thrown.,Open,Emergency,CCDEV1,360273,279020,07-SEP-13
+654516,273,"Unable to create client with Erisa fields.It throws the validation as ""ERISA Plan Regulated is Mandatory when ERISA Plan Type is provided """,Pending,Emergency,CCDEV1,360273,273846,08-SEP-13
+654517,272,"When a client with only non-CLT role is changed from DEA-ACT, Donot trade reason code is still ""not active""
+It should be changed to ""non client role""",Ready-to-Retest,Emergency,CCDEV2,360273,221129,09-SEP-13
+654518,271,"Issue 1:When modifying Erisa fields for approval scenario.it was updated directly.
+ It should go for approval when modifying erisa fields.
+ 
+Issue 2:The client is already have pending approval,when modifying Erisa fields for that client but its get updated directly.it is wrong.it should throw an validation.
+ 
+User:U008881
+Client id:0251798341
+Trans id:7970066 
+ ",Open,Low,CCDEV3,360273,273846,10-SEP-13
+654519,195,"Unable to search the client , ",Fixed,Low,CCDEV4,360273,273846,11-SEP-13
+582212,193,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV1,360273,221129,24-JUL-13
+582213,194,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Open,Medium,CCDEV1,360273,235234,24-JUL-13
+582214,195,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV1,360273,221129,24-JUL-13
+582215,192,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Open,High,CCDEV1,360273,221129,24-JUL-13
+582216,193,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Open,High,CCDEV1,360273,273846,24-JUL-13
+582210,195,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Open,High,CCDEV1,360273,221129,24-JUL-13
+582211,192,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Open,High,CCDEV1,360273,273846,24-JUL-13
+582312,195,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV1,360273,221129,24-JUL-13
+582313,192,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Open,Medium,CCDEV1,360273,235234,24-JUL-13
+582314,193,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV1,360273,221129,24-JUL-13
+582315,194,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Open,High,CCDEV1,360273,221129,24-JUL-13
+582316,195,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Open,High,CCDEV6,360273,273846,24-JUL-13
+582310,193,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Open,High,CCDEV1,360273,221129,24-JUL-13
+582311,194,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Open,High,CCDEV1,360273,273846,24-JUL-13
+654520,194,"""CC-CIS request timed out. Please try again."" is displaying while performing merge transaction.",Deferred,Low,CCDEV5,360273,273993,12-SEP-13
+654522,192,"The user Z245701, has update access,owner and view pi permission but this user is able to upload the template for deactivating a client.
+ 
+It should throw ""You donot have permission to activate/deactivate clients"" Instead it shows ""Client is Active in CRI System"" in notification list
+client: 0231840597 , trans id:11458471",Cannot Reproduce,Emergency,CCDEV7,360273,221129,13-SEP-13
+654521,193,"If empty value is provided for the field “Date indicia of U.S. status for W-8 client cured” and if the value of “Indicia of U.S. status found for Form W-8 client during due diligence review” is provided as “C (Indicia Cured)”, then the entered value for “Date indicia of U.S. status for W-8 client cured” will be suppressed and defaulted with the system date.",Hold,High,CCDEV6,360273,279020,14-SEP-13
+654523,277,The user permission for Erisa field is same as online for service.Please confirm with onsite.,Duplicate,Emergency,CCDEV4,360273,273846,25-JUL-13
+654524,276,"When providing Erisa Plan Type is invalid values ,it throws the validation message as ""ERISA Plan Regulated is Mandatory when ERISA Plan Type is provided""It is wrong. ",Open,Emergency,CCDEV5,360273,273846,25-JUL-13
+654525,275,"When a branch client under deactivated HO is changed from DEA-PRO via BEM, ""Failed.Invoking rules engine"" validation is shown in notification list
+ 
+Whereas via online the status change was a success for the same client 
+client id:0220473577
+trans id:11458494
+ ",Re-Open,Emergency,CCDEV1,360273,221129,25-JUL-13
+582219,192,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV1,360273,221129,24-JUL-13
+582217,194,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV1,360273,221129,24-JUL-13
+582218,195,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Open,Medium,CCDEV1,360273,235234,24-JUL-13
+582220,193,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Open,High,CCDEV1,360273,221129,24-JUL-13
+582221,194,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Open,High,CCDEV1,360273,273846,24-JUL-13
+582222,195,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV1,360273,221129,24-JUL-13
+582317,192,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV6,360273,221129,24-JUL-13
+582318,193,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Open,Medium,CCDEV6,360273,235234,24-JUL-13
+582319,194,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV6,360273,221129,24-JUL-13
+582320,195,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Open,High,CCDEV6,360273,221129,24-JUL-13
+582321,192,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Open,High,CCDEV6,360273,273846,24-JUL-13
+582322,193,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV6,360273,221129,24-JUL-13
+654526,274,unwanted Alerts are displaying on submit of a tax form while creating the tax form with account name.,Open,Emergency,CCDEV2,360273,273993,25-JUL-13
+654527,273,"Unable to perform any Transactions related to FATCA TAX Form Maintenance.
+A Validation 'Functional ID is missing' is thrown.",Rejected,Emergency,CCDEV3,360273,279020,25-JUL-13
+654528,272,"Unable to create tax form for PE lob.
+ 
+""CC-20013 : Error while Updating the database: {0}: Can't find resource for bundle java.util.PropertyResourceBundle, key PE "" is displaying on submit.
+ 
+able to create the tax form for other lob's",Open,Emergency,CCDEV4,360273,273993,27-JUL-13
+654529,271,Tax forms are not propogating from NONSURVIVING to SURVIVING vis CIS INBOUND MERGE.,Open,Emergency,CCDEV5,360273,273993,27-JUL-13
+654530,195,Script error is displayed when the subtype conversion from NON IND to INT is done along with ECC addition for a client which had EPT & ERF as N. ,Open,High,CCDEV1,360273,298950,27-JUL-13
+654531,194,Unable to add ECC to a HO client. It throws script error,Open,Medium,CCDEV2,360273,298950,28-JUL-13
+582225,194,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Open,High,CCDEV1,360273,221129,24-JUL-13
+582223,192,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Open,Medium,CCDEV1,360273,235234,24-JUL-13
+582224,193,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV1,360273,221129,24-JUL-13
+582226,195,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Open,High,CCDEV1,360273,273846,24-JUL-13
+582227,192,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV1,360273,221129,24-JUL-13
+582228,193,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Open,Medium,CCDEV1,360273,235234,24-JUL-13
+582230,195,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Open,High,CCDEV1,360273,221129,24-JUL-13
+582325,192,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Open,High,CCDEV6,360273,221129,24-JUL-13
+582323,194,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Open,Medium,CCDEV6,360273,235234,24-JUL-13
+582324,195,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV6,360273,221129,24-JUL-13
+582326,193,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Open,High,CCDEV6,360273,273846,24-JUL-13
+582327,194,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV6,360273,221129,24-JUL-13
+582328,195,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Open,Medium,CCDEV6,360273,235234,24-JUL-13
+582330,193,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Open,High,CCDEV6,360273,221129,24-JUL-13
+582337,192,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV6,360273,221129,24-JUL-13
+582338,193,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Open,Medium,CCDEV6,360273,235234,24-JUL-13
+582339,194,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV6,360273,221129,24-JUL-13
+582340,195,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Open,High,CCDEV6,360273,221129,24-JUL-13
+582341,192,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Open,High,CCDEV6,360273,273846,24-JUL-13
+582335,194,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Open,High,CCDEV6,360273,221129,24-JUL-13
+582336,195,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Open,High,CCDEV6,360273,273846,24-JUL-13
+654532,193,Comparision popup screen is not displaying on submit while creating a tax form.,Open,Low,CCDEV3,360273,273993,27-JUL-13
+654533,192,"when providing invalid values for the field EPT ,Erisa flag and ECC.first it throws the validation messgae as ""Ecc is invalid"".it is wrong it should through the validation as""EPT is invalid"".",Open,Emergency,CCDEV4,360273,273846,27-JUL-13
+654534,280,"Reactivation of sanctioned client is successful
+client id:0231840414 trans_id:11458593
+ 
+Even via online reactivation is successful",Open,Emergency,CCDEV5,360273,221129,27-JUL-13
+654535,279,"Isssue1:when providing special characters for short name other then CC  non allowable character.client get created.It is wrong it should throw an validation.
+Issue2:The above issue is occuring in client modify also.",Open,High,CCDEV6,360273,273846,27-JUL-13
+654536,278,There are no values for ECC in the downloaded code value reference sheet for NON IND client creation,Open,Medium,CCDEV7,360273,298950,27-JUL-13
+654537,277,Unable to create NON IND/INT clients via OTS. There is no client created with the given OTS id.,Pending,Low,CCDEV3,360273,298950,27-JUL-13
+654538,276,when the user close the comparision popup screen(not the close button) which is present at the top most right(X) then again if the user submit the transaction the screen remains as it is.nothing is happening.,Ready-to-Retest,Emergency,CCDEV4,360273,273993,27-JUL-13
+582229,194,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV1,360273,221129,24-JUL-13
+582231,192,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Open,High,CCDEV1,360273,273846,24-JUL-13
+582232,193,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV1,360273,221129,24-JUL-13
+582233,194,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Open,Medium,CCDEV1,360273,235234,24-JUL-13
+582234,195,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV1,360273,221129,24-JUL-13
+582331,194,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Open,High,CCDEV6,360273,273846,24-JUL-13
+582329,192,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV6,360273,221129,24-JUL-13
+582332,195,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV6,360273,221129,24-JUL-13
+582333,192,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Open,Medium,CCDEV6,360273,235234,24-JUL-13
+582334,193,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV6,360273,221129,24-JUL-13
+582342,193,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV6,360273,221129,24-JUL-13
+582345,192,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Open,High,CCDEV6,360273,221129,24-JUL-13
+582346,193,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Open,High,CCDEV6,360273,273846,24-JUL-13
+582347,194,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV6,360273,221129,24-JUL-13
+582235,192,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Open,High,CCDEV1,360273,221129,24-JUL-13
+582236,193,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Open,High,CCDEV1,360273,273846,24-JUL-13
+582237,194,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV1,360273,221129,24-JUL-13
+582238,195,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Open,Medium,CCDEV1,360273,235234,24-JUL-13
+582239,192,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV1,360273,221129,24-JUL-13
+582240,193,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Open,High,CCDEV1,360273,221129,24-JUL-13
+582241,194,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Open,High,CCDEV1,360273,273846,24-JUL-13
+582348,195,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Open,Medium,CCDEV6,360273,235234,24-JUL-13
+582349,192,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV6,360273,221129,24-JUL-13
+582350,193,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Open,High,CCDEV6,360273,221129,24-JUL-13
+582351,194,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Open,High,CCDEV6,360273,273846,24-JUL-13
+582242,195,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV1,360273,221129,24-JUL-13
+582243,192,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Open,Medium,CCDEV1,360273,235234,24-JUL-13
+582244,193,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV1,360273,221129,24-JUL-13
+582245,194,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Open,High,CCDEV1,360273,221129,24-JUL-13
+582246,195,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Open,High,CCDEV1,360273,273846,24-JUL-13
+582247,192,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV1,360273,221129,24-JUL-13
+582155,192,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Open,High,CCDEV1,360273,221129,24-JUL-13
+582248,193,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Open,Medium,CCDEV1,360273,235234,24-JUL-13
+582249,194,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV1,360273,221129,24-JUL-13
+582250,195,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Open,High,CCDEV1,360273,221129,24-JUL-13
+582251,192,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Open,High,CCDEV1,360273,273846,24-JUL-13
+582252,193,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV1,360273,221129,24-JUL-13
+582253,194,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Open,Medium,CCDEV1,360273,235234,24-JUL-13
+582255,192,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Open,High,CCDEV1,360273,221129,24-JUL-13
+654461,194,"While creating a client via online, in ownership tab when the LOB is given as RET, orgcode as any CCR orgcode and searched, no search results found is displayed ",Open,Emergency,CCDEV1,360273,221129,10-JUL-13
+654463,192,All the reports are in queue status for a very long time,Open,High,CCDEV3,360273,221129,12-JUL-13
+654464,280,FATCA details can't be fetched when the 'Return Only FATCA Profile' is blank,Rejected,Medium,CCDEV4,360273,335208,13-JUL-13
+654462,193,The new tag 'ReturnonlyFATCAprofile' is not existing in XSD,Re-Open,Emergency,CCDEV2,360273,335208,11-JUL-13
+582156,193,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Open,High,CCDEV1,360273,273846,24-JUL-13
+582157,194,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV1,360273,221129,24-JUL-13
+582158,195,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Open,Medium,CCDEV1,360273,235234,24-JUL-13
+582159,192,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV1,360273,221129,24-JUL-13
+582254,195,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV1,360273,221129,24-JUL-13
+582256,193,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Open,High,CCDEV1,360273,273846,24-JUL-13
+582257,194,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV1,360273,221129,24-JUL-13
+582258,195,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Open,Medium,CCDEV1,360273,235234,24-JUL-13
+582259,192,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV1,360273,221129,24-JUL-13
+654465,279,"Reports are not downloaded when file id is clicked. ""Internet explorer cannot display the page"" is shown",Open,Low,CCDEV5,360273,221129,15-JUL-13
+654466,278,"""No search Results are found""is displaying when tried to link an account to a TaxForm ID in ""Tax form account linkage screen""",Closed,Emergency,CCDEV1,360273,335208,15-JUL-13
+654467,277,"Unable to Create a Client via BEM.
+""CC-50001 : Client Central has encountered an error. Please contact the System Administrator"" is thrown on Upload.",Closed,Emergency,CCDEV2,360273,279020,15-JUL-13
+654468,276,"when creating client via ALD feed,it throws the script error.",Closed,Emergency,CCDEV3,360273,273846,15-JUL-13
+654469,275,Unable to perform Transactions in Index ORM. “Sorry! Error Occured while Processing your request” is thrown.,Closed,Emergency,CCDEV4,360273,279020,15-JUL-13
+654470,274,"The New fields added (1. Risk Rating Methodology ,2. System Source )are in different positions when compared to design document.
+ ",Closed,Low,CCDEV5,360273,322253,15-JUL-13
+654471,273,Search Screen is NOT poped up on Click of Search Icon next to ORG_CODE.,Closed,Low,CCDEV1,360273,279020,15-JUL-13
+582160,193,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Closed,High,CCDEV1,360273,221129,24-JUL-13
+582161,194,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Closed,High,CCDEV1,360273,273846,24-JUL-13
+582162,195,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV1,360273,221129,24-JUL-13
+582163,192,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Closed,Medium,CCDEV1,360273,235234,24-JUL-13
+582164,193,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV1,360273,221129,24-JUL-13
+582165,194,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Closed,High,CCDEV1,360273,221129,24-JUL-13
+582166,195,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Closed,High,CCDEV1,360273,273846,24-JUL-13
+582260,193,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Closed,High,CCDEV1,360273,221129,24-JUL-13
+582261,194,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Closed,High,CCDEV1,360273,273846,24-JUL-13
+582262,195,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV1,360273,221129,24-JUL-13
+582263,192,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Closed,Medium,CCDEV1,360273,235234,24-JUL-13
+582264,193,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV1,360273,221129,24-JUL-13
+582265,194,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Closed,High,CCDEV1,360273,221129,24-JUL-13
+582266,195,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Closed,High,CCDEV1,360273,273846,24-JUL-13
+654472,272,"In design document for search option 'NT1' Name,Tax Id,Country and City should be present but only Name,Tax Id and City is present .",Closed,Low,CCDEV2,360273,335208,15-JUL-13
+654473,271,"For the user 'U008881' myworklist screen is not updated in dev2. The last transaction shown is  12-jul-13.
+ 
+Unable to check LOB contact because of this issue
+ ",Closed,High,CCDEV3,360273,221129,15-JUL-13
+654474,195,Incorrect validation message is displayed - 'Please select an ERISA Contractual Capacity value for ERISa plan regulated' instead of 'ERISA Contractual Capacity is mandatory when ERISA Plan Regulated is Yes or Others”.(as specified in design doc),Pending,Emergency,CCDEV4,360273,298950,15-JUL-13
+654475,194,'Client central encountered a fatal error' - is returned while trying to create a NON IND client without ECC after clearing out the EPT entered,Ready-to-Retest,Emergency,CCDEV5,360273,298950,15-JUL-13
+654476,193,"Unable to create clients without ECC but with only EPT & ERF as N. Client central encountered a fatal error is returned. Hence, unable to proceed with the execution of 7220.",Closed,Emergency,CCDEV1,360273,298950,15-JUL-13
+654477,192,"When a client is added as a child to another client in credit hierarchy, credit approval is triggered. The CRU of the child matches the LOB contact but it is not displayed in myworklist.",Fixed,Emergency,CCDEV2,360273,221129,15-JUL-13
+654478,280,Script error thrown while trying to create an INT client using a user who does not have permission to create an INT client,Deferred,Emergency,CCDEV3,360273,298950,15-JUL-13
+582169,194,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV1,360273,221129,24-JUL-13
+582170,195,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Closed,High,CCDEV1,360273,221129,24-JUL-13
+582171,192,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Closed,High,CCDEV1,360273,273846,24-JUL-13
+582172,193,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV1,360273,221129,24-JUL-13
+582167,192,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV1,360273,221129,24-JUL-13
+582168,193,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Closed,Medium,CCDEV1,360273,235234,24-JUL-13
+582267,192,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV1,360273,221129,24-JUL-13
+582268,193,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Closed,Medium,CCDEV1,360273,235234,24-JUL-13
+582269,194,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV1,360273,221129,24-JUL-13
+582270,195,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Closed,High,CCDEV1,360273,221129,24-JUL-13
+582271,192,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Closed,High,CCDEV1,360273,273846,24-JUL-13
+582272,193,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV1,360273,221129,24-JUL-13
+654479,279,"When two credit clients(CB) are merged, credit approval is triggered and CRU of remaining client matches the LOB contact list but it is not displayed in myworklist screen. Transid:11457488",Hold,Emergency,CCDEV4,360273,221129,15-JUL-13
+654480,278,"Unable to enter EPT & ECC for IAF clients using TS user - U851443
+",Cannot Reproduce,Emergency,CCDEV5,360273,298950,15-JUL-13
+654481,280,"A mandatory validation is not thrown to enter ERF when EPT alone is entered while creating an INT client. Also, a blank entry is made in for ECC in CLIENT_AUX_INFO table. Refer clt oid - 0251798072
+",Duplicate,Emergency,CCDEV1,360273,298950,15-JUL-13
+654482,279,"Unable to create an INT LE client with INTC alias via online since the entity category, ots status, bank type and other int clt attributes dropdowns are populated as blank
+",Open,High,CCDEV2,360273,298950,19-JUL-13
+654483,278,"A mandatory validation is not thrown to enter ECC when EPT  is entered and ERF as Yes while creating an INT client. Also, a blank entry is made in for ECC in CLIENT_AUX_INFO table. Refer clt oid - 0251798076
+",Re-Open,Medium,CCDEV1,360273,298950,20-JUL-13
+654484,277,"Script error is thrown when a client create workitem is opened in myworklist screen of the preparer
+ 
+Iss 2:
+Same script error is thrown even in the action list of the approver",Closed,Low,CCDEV2,360273,298950,21-JUL-13
+654485,276,"ECC field is not added for a client which has EPT & ERF previously for the client. Refer clt oid - 221391495.
+ 
+In db, the cxi_cd is incorrectly added as ERF instead of ECC which is the issue
+ 
+Iss2:
+The changed info for this ECC addition is not displayed properly. Also, it displays PRI CRDT NAIC is removed. However, no transaction was made for it.
+ 
+Iss3:
+2 transactions are listed in CC_TRANS_LOCK table. one invalid transaction is dispalyed where CCC is removed. However, no such transaction was performed
+ ",Rejected,Emergency,CCDEV3,360273,298950,21-JUL-13
+654486,275,"When a child client in a credit hierarchy is made as UP, The transaction gets failed but in online it shows changes submitted for approval on submision and workitem is not displayed ",Closed,Emergency,CCDEV4,360273,221129,21-JUL-13
+654487,274,No changes to submit is thrown along with a script error when EPT and ERF is added for a client without EPT.,Closed,High,CCDEV5,360273,298950,21-JUL-13
+582175,192,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Closed,High,CCDEV1,360273,221129,24-JUL-13
+582176,193,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Closed,High,CCDEV1,360273,273846,24-JUL-13
+582177,194,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV1,360273,221129,24-JUL-13
+582178,195,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Closed,Medium,CCDEV1,360273,235234,24-JUL-13
+582180,193,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Closed,High,CCDEV1,360273,221129,24-JUL-13
+582173,194,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Closed,Medium,CCDEV1,360273,235234,24-JUL-13
+582174,195,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV1,360273,221129,24-JUL-13
+582273,194,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Closed,Medium,CCDEV1,360273,235234,24-JUL-13
+582274,195,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Low,CCDEV1,360273,221129,24-JUL-13
+582275,192,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Closed,High,CCDEV1,360273,221129,24-JUL-13
+582276,193,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Closed,High,CCDEV1,360273,273846,24-JUL-13
+582277,194,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Low,CCDEV1,360273,221129,24-JUL-13
+582278,195,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Closed,Medium,CCDEV1,360273,235234,24-JUL-13
+582280,193,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Closed,High,CCDEV1,360273,221129,24-JUL-13
+654539,275,In the comparision popup screen the fields are not present in order wise.As per design 4.2.1.1.3 it should follow the FATCA order.Like after account name country fields should be displayed but now country fields are populated first and then account name which is incorrect.,Closed,Emergency,CCDEV5,360273,273993,27-JUL-13
+654540,274,"Incorrect validation thrown - CCS-01552-ERISA Contractual Capacity field is required when ERISA Plan Regulated is Y or O - while trying to create a NON IND client with EPT as 10, ECC as 01 and ERF as Y.
+",Fixed,Emergency,CCDEV1,360273,298950,28-JUL-13
+654564,275,"Tax Form is not updated successfully when W8 document status is provided as ""Active Certified"" and Indicia of U.S. status found for Form W-8 client during due diligence review is provided as ""Indica cured"".
+ 
+The page remains as it is after submit
+ 
+tax form is not created only when these fields are given",Cannot Reproduce,High,CCDEV3,360273,273993,03-AUG-13
+650561,272,"""CC-20013 : Error while Updating the database: {0}: Can't find resource for bundle java.ISTil.PropertyResourceBundle, key PE "" and ""CAAT5029:INVALID US INDICA DOCUMENT RECEIVED "" is displaying when tried to create a tax form along with  “Indicia of U.S. status found for Form W-8 client during due diligence review” as ""INDICA cURED"" and with the date field.",Closed,Emergency,CCDEV4,360273,273993,24-JUL-13
+650562,273,"1.In Report type drop down it is as 'Request FB 2nd Level Review '
+ 
+2.In Report type drop down it is as ' Request send to Sanctions Complete'",Closed,Emergency,CCDEV4,360273,335208,24-JUL-13
+650563,273,"1.Unable to save the special character '&'
+2.Unable to open the client with trans ID  - 11458062 ",Closed,Emergency,CCDEV4,360273,335208,24-JUL-13
+650564,273,In New Case Comment after savig the work item with 2500 character and if again open the same work item only 1944 character is displayed . BIST in database 2500 character is saved,Closed,Emergency,CCDEV4,360273,335208,24-JUL-13
+650565,273,"""clear all"" function is not working as expected for ""select columns to appear in the report"" grid for ""Client List Extract""Report.
+ 
+ 
+Looks like it is the same issue with many reports and also adding this defect to inherent tracker-ES313
+ ",Deferred,Emergency,CCDEV4,360273,322253,24-JUL-13
+650566,273,"REQ_5:
+The new fields Non Golden Entity Group Role and Non Golden Entity Group ID does not fetch any data in ""Client list extract report"" for a client which already has Non Golden Entity Group Role and Non Golden Entity Group ID.
+ 
+It fetches data only when ""Select all columns"" is selected under ""Select Columns to appear in the report"" in CLE report
+ 
+sample report ID:736986
+when all selcted->736982(this is working fine)
+ ",Closed,Emergency,CCDEV4,360273,322253,24-JUL-13
+650567,273,The mandatory validation 'ECC is mandatory when ERF is Y/O' is thrown for an INT BU client which is incorrect,Rejected,Emergency,CCDEV4,360273,298950,24-JUL-13
+650568,273,"The Error code is wrong.When providing Erisa flag is Y or N and ECC is blank.It throws the validation message as ERISA Contractual Capacity field is required when ERISA Plan Regulated is Y or O  AttribISTes: Code -> CCS-01552  ,bIST error code mentioned in the design document is CCS-01550.",Closed,Emergency,CCDEV4,360273,273846,24-JUL-13
+650569,273,"'There are unsaved changes, do you want to continue' message is displayed incorrectly when there are no changes performed on a INT BU client.",Rejected,Emergency,CCDEV4,360273,298950,24-JUL-13
+650570,273,"When a DEA client is activated, Active_since_dt is not updated both in DB and view/modify screen. Client id:0699736107. Trans id:11458219. User:U008881",Closed,Emergency,CCDEV4,360273,221129,24-JUL-13
+650571,273,"Issue1:When modifying  client,ECC alone is provided for add transaction value get updated,it is wrong it should through  validation.
+ 
+Issue2:When modifying  client,ECC alone is provided as invalid values for add transaction value get updated,it is wrong it should through validation.
+USer:U008881
+Client id:0251798230",Closed,Emergency,CCDEV4,360273,273846,24-JUL-13
+650572,273,"Unable to open the BAR chart,PIE chart,LINE chart from the MIS search result screen",Closed,Emergency,CCDEV4,360273,335208,24-JUL-13
+650573,273,"Activate/Deactivate template allows operation types 'a','p','d'
+which is incorrect. Only Capital letters should be allowed",Closed,Emergency,CCDEV4,360273,221129,24-JUL-13
+650574,273,"Issue1:When creating client with Erisa fields,ECC alone is provided.the client get created with ECC alone.it is wrong.it should through a validation.
+Issue2:The above issue is occuring modify also,when add ECC alone for client it's get updated.It should through an validation.
+ECC is dependent on EPT and Erisa Flag.
+",Duplicate,Emergency,CCDEV4,360273,273846,24-JUL-13
+650575,273,Unable to Add a Tax fom for a Client via Services. Invalid Custome ID or Customer ID not Found in Index is thrown.,Closed,Emergency,CCDEV4,360273,235251,24-JUL-13
+650582,274,"The user Z245701, has update access,owner and view pi permission bIST this user is able to upload the template for deactivating a client.
+ 
+It should throw ""You donot have permission to activate/deactivate clients"" Instead it shows ""Client is Active in CRI System"" in notification list
+client: 0231840597 , trans id:11458471",Deferred,Emergency,CCDEV4,360273,221129,24-JUL-13
+650583,274,The user permission for Erisa field is same as online for service.Please confirm with onsite.,Rejected,Emergency,CCDEV4,360273,273846,24-JUL-13
+650584,274,"When providing Erisa Plan Type is invalid values ,it throws the validation message as ""ERISA Plan Regulated is Mandatory when ERISA Plan Type is provided""It is wrong. ",Closed,Emergency,CCDEV4,360273,273846,24-JUL-13
+650585,274,"When a branch client under deactivated HO is changed from DEA-PRO via BEM, ""Failed.Invoking rules engine"" validation is shown in notification list
+ 
+Whereas via online the status change was a success for the same client 
+client id:0220473577
+trans id:11458494
+ ",Closed,Emergency,CCDEV4,360273,221129,24-JUL-13
+650586,274,unwanted Alerts are displaying on submit of a tax form while creating the tax form with account name.,Closed,Emergency,CCDEV4,360273,273993,24-JUL-13
+650594,275,"Reactivation of sanctioned client is successful
+client id:0231840414 trans_id:11458593
+ 
+Even via online reactivation is successful",Rejected,Emergency,CCDEV4,360273,221129,24-JUL-13
+650595,275,"Isssue1:when providing special characters for short name other then CC  non allowable character.client get created.It is wrong it should throw an validation.
+Issue2:The above issue is occuring in client modify also.",Deferred,Emergency,CCDEV4,360273,273846,24-JUL-13
+650596,275,There are no values for ECC in the downloaded code value reference sheet for NON IND client creation,Closed,Emergency,CCDEV4,360273,298950,24-JUL-13
+650597,275,Unable to create NON IND/INT clients via OTS. There is no client created with the given OTS id.,Re-Open,Emergency,CCDEV4,360273,298950,24-JUL-13
+650598,275,when the user close the comparision popup screen(not the close bISTton) which is present at the top most right(X) then again if the user submit the transaction the screen remains as it is.nothing is happening.,Closed,Emergency,CCDEV4,360273,273993,24-JUL-13
+650599,275,In the comparision popup screen the fields are not present in order wise.As per design 4.2.1.1.3 it should follow the FATCA order.Like after account name country fields should be displayed bIST now country fields are populated first and then account name which is incorrect.,Re-Open,Emergency,CCDEV4,360273,273993,24-JUL-13
+650576,273,"Unable to create client with Erisa fields.It throws the validation as ""ERISA Plan Regulated is Mandatory when ERISA Plan Type is provided """,Cannot Reproduce,Emergency,CCDEV4,360273,273846,24-JUL-13
+650577,274,"When a client with only non-CLT role is changed from DEA-ACT, Donot trade reason code is still ""not active""
+It should be changed to ""non client role""",Closed,Emergency,CCDEV4,360273,221129,24-JUL-13
+650578,274,"Issue 1:When modifying Erisa fields for approval scenario.it was updated directly.
+ It should go for approval when modifying erisa fields.
+ 
+Issue 2:The client is already have pending approval,when modifying Erisa fields for that client bIST its get updated directly.it is wrong.it should throw an validation.
+ 
+User:U008881
+Client id:0251798341
+Trans id:7970066 
+ ",Closed,Emergency,CCDEV4,360273,273846,24-JUL-13
+650579,274,"Unable to search the client , ",Closed,Emergency,CCDEV4,360273,273846,24-JUL-13
+650580,274,"""CC-CIS request timed oIST. Please try again."" is displaying while performing merge transaction.",Closed,Emergency,CCDEV4,360273,273993,24-JUL-13
+650581,274,"If empty value is provided for the field “Date indicia of U.S. status for W-8 client cured” and if the value of “Indicia of U.S. status found for Form W-8 client during due diligence review” is provided as “C (Indicia Cured)”, then the entered value for “Date indicia of U.S. status for W-8 client cured” will be suppressed and defaulted with the system date.",Closed,Emergency,CCDEV4,360273,235251,24-JUL-13
+650587,274,"Unable to perform any Transactions related to FATCA TAX Form Maintenance.
+A Validation 'Functional ID is missing' is thrown.",Rejected,Emergency,CCDEV4,360273,235251,24-JUL-13
+650588,274,"Unable to create tax form for PE lob.
+ 
+""CC-20013 : Error while Updating the database: {0}: Can't find resource for bundle java.ISTil.PropertyResourceBundle, key PE "" is displaying on submit.
+ 
+able to create the tax form for other lob's",Deferred,Emergency,CCDEV4,360273,273993,24-JUL-13
+650589,274,Tax forms are not propogating from NONSURVIVING to SURVIVING vis CIS INBOUND MERGE.,Rejected,Emergency,CCDEV4,360273,273993,24-JUL-13
+650590,274,Script error is displayed when the subtype conversion from NON IND to INT is done along with ECC addition for a client which had EPT & ERF as N. ,Re-Open,Emergency,CCDEV4,360273,298950,24-JUL-13
+650591,274,Unable to add ECC to a HO client. It throws script error,Re-Open,Emergency,CCDEV4,360273,298950,24-JUL-13
+650592,274,Comparision popup screen is not displaying on submit while creating a tax form.,Closed,Emergency,CCDEV4,360273,273993,24-JUL-13
+650593,275,"when providing invalid values for the field EPT ,Erisa flag and ECC.first it throws the validation messgae as ""Ecc is invalid"".it is wrong it should through the validation as""EPT is invalid"".",Ready-to-Retest,Emergency,CCDEV4,360273,273846,24-JUL-13
+650510,271,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Closed,Emergency,CCDEV4,360273,221129,24-JUL-13
+650511,271,"Creating CB client  using only CB only user ,SPN indicator is Enabled which is incorrect.It should be disable.
+User:E022289",Closed,Emergency,CCDEV4,360273,273846,24-JUL-13
+650512,271,"Even after giving modify jurisdiction(BR) permission to CB user(D454479), It says “You do not have permission to add or modify brazil jurisdiction ”. ",Rejected,Emergency,CCDEV4,360273,221129,24-JUL-13
+650513,271,"""CB User is unable to provide the SPN on a CB client created having no SPN via Client View/Modify",Closed,Emergency,CCDEV4,360273,235234,24-JUL-13
+650514,271,"Brazil jurisdiction fields(Tax form info) when added along with other fields for a CB client goes for approval when added via services and when tax form type is given, ""tax form type invalid"" is thrown 
+",Deferred,Emergency,CCDEV4,360273,221129,24-JUL-13
+650515,271,"Client Search is taking too long (More than 5 min) and leads to internal server error, when searching with client id
+",Closed,Emergency,CCDEV4,360273,221129,24-JUL-13
+650517,271,"Unable to create a client via Services and the following error message has been displayed.
+ 
+""CC-50034 : Error while sending message to Change Event Queue Linked Exception :MQJE001: Completion Code '2', Reason '2009'.: MQJMS2007: failed to send message to MQ queue"" ",Closed,Emergency,CCDEV4,360273,114038,24-JUL-13
+650516,271,"Issue 1:
+When a User tries to provide access for a SID/ GID 'E115085' by providing GID_TYPE as 'Owner Approver', LOB_GRP_CD drop down has a value 'CCR'. Ideally, it should have a Value 'NRG'.
+ 
+ 
+Issue 2:
+LOB_OWNR_CD dropdown should contain all the New Owner ('AS', 'OT', 'IM', 'MM',  'CC' , 'XX', 'TS) Codes along with the existing Owner Code. BIST it doesnt contain the Owner Code 'XX'.
+Owner Code 'XX' is NOT present in LOB_OWNR_CD column in CC_ORG_LOB_MAPPING table",Closed,Emergency,CCDEV4,360273,235251,24-JUL-13
+650518,272,Error occured in services is displayed in dev3 for any valid xmls uploaded,Closed,Emergency,CCDEV4,360273,221129,24-JUL-13
+650519,273,"Issue 1: When creating a client with OT orgcodes -25701(SAP code-358800), 27506(SAP code -429000) via inbound, client gets created with RD orgcode(88503)
+ 
+Issue 2: Two different ownercodes are displayed for an org code(10344)",Rejected,Emergency,CCDEV4,360273,221129,24-JUL-13
+650520,274,"In approver Action list,when providing comments and save the transaction,it throws the sorry error page.",Closed,Emergency,CCDEV4,360273,273846,24-JUL-13
+650521,275,"While creating a client via online, in ownership tab when the LOB is given as RET, orgcode as any CCR orgcode and searched, no search results found is displayed ",Rejected,Emergency,CCDEV4,360273,221129,24-JUL-13
+650522,276,The new tag 'ReturnonlyFATCAprofile' is not existing in XSD,Closed,Emergency,CCDEV4,360273,335208,24-JUL-13
+650523,277,All the reports are in queue status for a very long time,Closed,Emergency,CCDEV4,360273,221129,24-JUL-13
+650524,278,FATCA details can't be fetched when the 'Return Only FATCA Profile' is blank,Closed,Emergency,CCDEV4,360273,335208,24-JUL-13
+650525,279,"Reports are not downloaded when file id is clicked. ""Internet explorer cannot display the page"" is shown",Closed,Emergency,CCDEV4,360273,221129,24-JUL-13
+650526,280,"""No search Results are found""is displaying when tried to link an account to a TaxForm ID in ""Tax form account linkage screen""",Closed,Emergency,CCDEV4,360273,335208,24-JUL-13
+650547,272,No changes to submit is thrown along with a script error when EPT and ERF is added for a client withoIST EPT.,Closed,Emergency,CCDEV4,360273,298950,24-JUL-13
+650548,272,"During Client create and modify via inbound , processed flag is not changing to 'Y' in cis_inbound table",Closed,Emergency,CCDEV4,360273,221129,24-JUL-13
+650549,272,Unable to create a credit NON IND client withoIST EPT & ERF. The page just reloads on submi,Closed,Emergency,CCDEV4,360273,298950,24-JUL-13
+650550,272,The changed info is not displayed properly in CLIENT_AUX_INFO table when ECC is removed for a client with ERF as N. ,Ready-to-Retest,Emergency,CCDEV4,360273,298950,24-JUL-13
+650551,272,This looks like an inherent issue however not sure. The EPT value displayed in download as excel option is incorrect. It displays the value as Deferred Compensation Plans instead of ESOPS.,Deferred,Emergency,CCDEV4,360273,298950,24-JUL-13
+650552,272,A blank value is inserted as CXI_VALUE in CLIENT_AUX_INFO table with CXI_CD as ECC when ERF is changed from Y to N for a client withoIST ECC.,Closed,Emergency,CCDEV4,360273,298950,24-JUL-13
+650553,272,Script error is thrown while trying to update the ERF as O from Y and ECC with a new value. ,Closed,Emergency,CCDEV4,360273,298950,24-JUL-13
+650554,272,"Script error is displayed on load of aNON IND client in act/dea clt screen. Refer clt oid - 220529680, user - U851443",Rejected,Emergency,CCDEV4,360273,298950,24-JUL-13
+650555,272,"On click of approve, the TSS workitem does not get submitted instead the page just reloads when ECC is entered along with erisa fields for a TSS open client workitem in TSS action list of the reviewer",Closed,Emergency,CCDEV4,360273,298950,24-JUL-13
+650556,272,"A script error is thrown in view client pop up which opens on click of the client id hyperlink in view hierarchy screen
+ 
+ISS2:
+Unable to check if the ecc is enabled/disabled for non tss user due to this script error",Re-Open,Emergency,CCDEV4,360273,298950,24-JUL-13
+650557,272,A script error is thrown along with sorry error occured page for an INT client id in view client pop up displayed on click of client id hyperlink in tax form maintenance screen,Closed,Emergency,CCDEV4,360273,298950,24-JUL-13
+650558,272,"While reprocessing in index orm, it creates two duplicate transaction entries for modifying the ERF from Yes to No and removing the ECC. One transaction is pending for approval, the other transaction is directly updated. However in db, the values are directly updated",Open,Emergency,CCDEV4,360273,298950,24-JUL-13
+650559,272,"History is not displaying for the client  if the we select the Entity as Tax Form and Data Element as ""Indicia of U.S. status found for Form W-8 client during due diligence review""
+ 
+And also Account name is displaying in history screen and TAX_FM,HIST_TAX_FM tables  even that tax form is not having any account name which is incorrect.",Deferred,Emergency,CCDEV4,360273,273993,24-JUL-13
+650560,272," the field “Indicia of U.S. status found for Form W-8 client during due diligence review” , “Date indicia of U.S. status for W-8 client cured” fields ,are not displaying for update form transactions in the print popup screen. 
+ 
+Issue 2:the field Document received to cure indicia of U.S. status field also is not displaying in the print popup screen",Deferred,Emergency,CCDEV4,360273,273993,24-JUL-13
+654567,272,"History is not displaying for the client  if the we select the Entity as Tax Form and Data Element as ""Indicia of U.S. status found for Form W-8 client during due diligence review""
+ 
+And also Account name is displaying in history screen and TAX_FM,HIST_TAX_FM tables  even that tax form is not having any account name which is incorrect.",Deferred,Emergency,CCDEV1,360273,273993,29-SEP-13
+654568,271," the field “Indicia of U.S. status found for Form W-8 client during due diligence review” , “Date indicia of U.S. status for W-8 client cured” fields ,are not displaying for update form transactions in the print popup screen. 
+ 
+Issue 2:the field Document received to cure indicia of U.S. status field also is not displaying in the print popup screen",Hold,Emergency,CCDEV2,360273,273993,27-JUL-13
+654569,195,"when providing fully special characters for name 1 and name 2 in CIS inbound,it throws the validation message.but name we can able to provide fully special character.",Fixed,Medium,CCDEV5,360273,273846,03-AUG-13
+654565,274,values which are provided while creating a taxform are not present after form is created,Duplicate,High,CCDEV4,360273,273993,03-AUG-13
+654566,273,"While reprocessing in index orm, it creates two duplicate transaction entries for modifying the ERF from Yes to No and removing the ECC. One transaction is pending for approval, the other transaction is directly updated. However in db, the values are directly updated",Fixed,Emergency,CCDEV1,360273,298950,25-JUL-13
+654572,192,"Tax Form is not updated successfully when W8 document status is provided as ""Active Certified"" and Indicia of U.S. status found for Form W-8 client during due diligence review is provided as ""Indica cured"".
+ 
+The page remains as it is after submit
+ 
+tax form is not created only when these fields are given",Cannot Reproduce,High,CCDEV3,360273,273993,03-AUG-13
+654570,194,CCS-01552-ERISA Contractual Capacity field is required when ERISA Plan Regulated is Y or O - incorrect validation is thrown when ECC is not entered with ERF as Y/O while creating a VEN role client in MCC,Deferred,Medium,CCDEV1,360273,298950,03-AUG-13
+654571,193,In Comparision pop up screen Country with US is not displaying,Hold,Emergency,CCDEV2,360273,335208,03-AUG-13
+650600,275,"Incorrect validation thrown - CCS-01552-ERISA Contractual Capacity field is required when ERISA Plan Regulated is Y or O - while trying to create a NON IND client with EPT as 10, ECC as 01 and ERF as Y.
+",Closed,Emergency,CCDEV4,360273,298950,24-JUL-13
+655293,195,"When providing less then four characters for doing business as field,the cc non allowable special characters also accepted(i.e like ra$,r=a,$ad etc).It is wrong.it should throwa validation message.",Open,Low,CCDEV4,360273,273850,28-JUL-13
+794749,195,Error occured in services is displayed in dev3 for any valid xmls uploaded,Hold,High,CCDEV3,360273,166510,10-JUL-13
+26144,192,desc,Hold,Medium,CCDEV4,264965,264965,18-MAR-14
