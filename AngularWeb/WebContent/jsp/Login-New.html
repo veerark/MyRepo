@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html ng-app="login">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.js"></script>
+<script src="js/loginController.js"></script>
+  <script src="js/services.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular-resource.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.js"></script>
+<meta charset="utf-8">
+<link href="css/loginStyle.css" rel="stylesheet" />
+<title>Login Page</title>
+</head>
+
+<body>
+
+<div id="container" >
+	<header>Welcome</header>
+	<table class="containerTable">
+	<tr height="50%">
+	<td height="100%" width=70%  id="leftColumn">
+	<video height="100%" width=100% controls="controls"  autoplay="autoplay" loop="loop">
+	  <source src="movie/movie.mp4" type="video/mp4"></source>
+	</video>  
+	</td>
+	<td height="100%" width=30% id="rightColumn" valign="middle">
+	<div id="loginHeader">Login<hr></div>
+	<form name="login" ng-controller="LoginController">
+	<table>
+	<tr>
+	<td>UserId</td><td><input type="text" ng-model="user.name" name="uName" required/></td>
+	  <div ng-show="login.uName.$dirty && login.uName.$error.required">User Name is Mandatory Field*</div>
+	</tr>
+	
+	<tr>
+	<td>Password</td>
+	   <!-- <td><input type="password" ng-model="user.password" required="required" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z])\w{6,}" name="password" 
+		onchange=" this.setCustomValidity(this.validity.patternMismatch ? 'Password must contain at least 6 characters, including uppercase,lowercase and numbers' : '');
+  		if(this.checkValidity()) form.pwd2.pattern = this.value;" />  
+
+     <span id="PasswordStrength"></span>  
+
+	</td> -->
+	  <td>
+	      <input type="password" ng-model="user.password" name="password" required/>
+	      <div ng-show="login.password.$dirty && login.password.$error.required">Password is Mandatory Field*</div> 
+	  </td>
+	</tr>
+	
+	<tr>
+	<td>Location</td>
+	<td>	
+	<select>
+		<option value="banglore">Banglore</option>
+		<option value="chennai">Chennai</option>
+		<option value="delhi">Delhi</option>
+	</select>
+	</td>
+	</tr>
+	
+	<tr><td colspan="2" align="center"><button ng-click="login()">Login</button></td></tr>
+	</table>
+	 </form>
+	
+	</td>
+	</tr>
+	</table>
+	<footer><i>copyright(c) 2014</i></footer>
+</div>
+
+</body>
+</html>

@@ -1,0 +1,13 @@
+<html ng-app>
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+  <script src="js/helloController.js"></script>
+</head>
+   <body>
+     <div ng-controller='HelloController'>
+	 <input ng-model='greeting.text'>
+		<p>{{greeting.text}},World</p>		
+	 </div>	
+	 <input type="button" value="my cart" onclick="document.location.href='jsp/cart.html';"></input>
+</body>
+</html>

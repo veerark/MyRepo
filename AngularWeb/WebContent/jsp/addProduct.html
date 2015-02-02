@@ -1,0 +1,33 @@
+<!doctype html>
+<html ng-app="addProduct">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+     <script src="js/Controller.js"></script>
+     <script src="js/services.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular-resource.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.js"></script>
+    <p align="center"><b>Sample Add Product Page</b></p>
+  </head>
+  <body>
+   <table>
+    <div align="center" ng-controller="productController">
+      <tbody>
+       <form name="addProduct" class="css-form">
+          Title:
+          <input type="text" ng-model="product.title" name="prdTitle" required />
+            <div ng-show="addProduct.prdTitle.$error.required && addProduct.prdTitle.$dirty">Product Title Required!!</div>
+		  Quantity:
+          <input type="number" ng-model="product.qty" name="prdQuantity" min="0" max="10" required /><br />
+            <div ng-show="addProduct.prdQuantity.$dirty && addProduct.prdQuantity.$error.required">Product Title Required!!</div>
+            
+		  Price:
+          <input type="number" ng-model="product.price" name="prdPrice" required /><br />
+            <div ng-show="addProduct.prdPrice.$dirty && addProduct.prdPrice.$error.required">Product Title Required!!</div>            
+        
+          <button ng-submit="addProduct(product)">Add</button>    
+             	            
+       </form>
+       </tbody>
+    </div>
+    </table>
+  </body>

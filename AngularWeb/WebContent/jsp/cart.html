@@ -1,0 +1,35 @@
+<html ng-app="mycart">
+<head>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+  <script src="../js/cartController.js"></script>
+  <script src="../js/services.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular-resource.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.js"></script>
+  <p align="center"><b>Sample Product Details Page</b></p>
+</head>
+<body >
+<table>
+  <div  ng-controller='CartController'>
+    <span><b>Title &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></span>
+	<span><b>Quantity&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</b></span>
+	<span><b>Price</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+	<span><b><i>Total</i></b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>	
+   <div ng-repeat="item in items">
+     <span>{{item.itemDescription}}</span>
+	 <input ng-model='item.itemQuantity'>
+	 <span>{{item.itemPrice | currency}}</span>	 
+	 <span>{{item.itemQuantity * item.itemPrice | currency}}</span>
+	 <!-- <button ng-click="add()">Add</button> -->
+	 <button ng-click="remove(index, item)">Remove</button>
+	
+
+	
+	 <!--  <button ng-click="remove(item.itemDescription)">Remove</button>-->
+  </div>
+  
+ </div> 
+ </table> 
+ 
+ 
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!doctype html>
+<html ng-app="login">
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+     <script src="js/Controller.js"></script>
+     <script src="js/services.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular-resource.js"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.10/angular-route.js"></script>
+    <p align="center"><b>Sample Page</b></p>
+  </head>
+  <body>
+    <div align="center" ng-controller="LoginController">
+      <form name="form" class="css-form">
+        Name:
+          <input type="text" ng-model="user.name" name="uName" required /><br />
+            <div ng-show="form.uName.$dirty && form.uName.$error.required">Name Required!!</div>
+        E-mail:
+          <input type="email" ng-model="user.email" name="uEmail" required/><br />
+           <div ng-show="form.uEmail.$dirty && form.uEmail.$invalid">Invalid:
+          <span ng-show="form.uEmail.$error.required">Tell us your email.</span>
+          <span ng-show="form.uEmail.$error.email">This is not a valid email.</span>
+        </div>
+    
+        <button ng-click="login(user)">Login</button>
+      </form>
+    </div>
+  </body>
+</html>
